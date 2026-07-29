@@ -8,11 +8,13 @@ Tổng hợp tất cả câu hỏi mở từ các file GDD. Team thảo luận v
 
 | # | Câu Hỏi | File Liên Quan |
 |---|---|---|
-| 1 | Phong server identity là gì? | `02_server_system/phong_server.md` |
-| 2 | Băng server identity là gì? | `02_server_system/bang_server.md` |
 | 3 | 7 tier quân đầy đủ cho tất cả 10 thế lực | `05_army_system/army_system.md` |
 | 4 | Combat system — turn-based hay real-time? | Chưa có file |
 | 5 | Map hex layout chi tiết — Tiểu Đại Lục | Chưa có file |
+| 19 | Boost người thắng tháp — vĩnh viễn hay tạm thời/suy giảm? | `DISCUSSION/ideas_backlog.md` |
+| 20 | Kẻ thua tháp được gì? (loser reward chống snowball) | `DISCUSSION/ideas_backlog.md` |
+| 21 | "Đòi lại nhà" sau khi thắng tháp — khó tới đâu? | `DISCUSSION/ideas_backlog.md` |
+| 22 | Tỷ lệ phạt đổi ngược Linh Thạch + sàn mặc định là bao nhiêu? | `06_resource_system/resource_system.md` |
 
 ---
 
@@ -62,3 +64,17 @@ Tổng hợp tất cả câu hỏi mở từ các file GDD. Team thảo luận v
 | — | Tù nhân ép học skill — có nhưng tụt tier (C) | Session 1 |
 | — | False Flag — nên cho vào | Session 1 |
 | — | 1 gói nạp duy nhất — 10 đồng/ngày | Session 1 |
+| — | Phong identity — Cơ Động & Tình Báo | Session 2 |
+| — | Băng identity — Kiểm Soát & Phong Toả | Session 2 |
+| — | Phong ↔ Băng khắc chế đối xứng (triệt tiêu signature của nhau) | Session 2 |
+| — | Phong: cơ chế môi trường Bão Phong (đổi hướng gió toàn map) | Session 2 |
+| — | Băng: cơ chế môi trường Hàn Triều (đóng băng đảo địa hình) | Session 2 |
+| — | Phong intel: "thấy vị trí, không thấy đường đi" — rải theo 3 cấp Linh Mạch | Session 2 |
+| — | Phong: kinh tế cướp bóc + phòng thủ giấy (không giữ được của) | Session 2 |
+| — | Băng: kinh tế nhà băng (gửi/vay/thu hồi) + văn hoá ít cướp (emergent) | Session 2 |
+| — | Băng: hậu cần nặng → chậm; nội địa "con nhím" (thủ mạnh, khó bị cướp) | Session 2 |
+| — | Thu hồi nợ: Pháp Gia bảo chứng → không xong thì băm nhau (tài nguyên chảy ra) | Session 2 |
+| — | Linh Thạch 3 mệnh giá 1:1000, đổi xuôi free / ngược lossy | Session 2 |
+| — | Tỷ giá đổi ngược do Băng đặt (cạnh tranh khi 2 Băng) + sàn mặc định của game | Session 2 |
+| — | Kho có giới hạn ô; gom mệnh giá do người chơi tự chọn | Session 2 |
+| — | Nhà băng sụp = mất uy tín (xây lại chậm), tài nguyên farm lại được | Session 2 |

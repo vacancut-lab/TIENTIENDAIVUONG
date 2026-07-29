@@ -53,7 +53,7 @@ DISCUSSION/
 |---|---|
 | Season Structure | ✅ Hoàn chỉnh |
 | Server System (Hoả, Kim, Mộc, Thuỷ, Thổ, Lôi) | ✅ Hoàn chỉnh |
-| Server System (Phong, Băng) | 🚧 Chưa thiết kế |
+| Server System (Phong, Băng) | ✅ Framework hoàn chỉnh |
 | Faction System | ✅ Framework hoàn chỉnh |
 | Character System | ✅ Framework hoàn chỉnh |
 | Army System | ✅ Framework hoàn chỉnh |

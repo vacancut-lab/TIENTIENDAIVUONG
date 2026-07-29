@@ -10,8 +10,8 @@
 | 💧 Thuỷ | Đoàn Kết & Máu Trâu | ✅ Hoàn chỉnh |
 | 🏔️ Thổ | Đông Dân & Nền Tảng | ✅ Hoàn chỉnh |
 | ⚡ Lôi | Tinh Anh & Độc Lập | ✅ Hoàn chỉnh |
-| 🌪️ Phong | ??? | ❌ Chưa thiết kế |
-| ❄️ Băng | ??? | ❌ Chưa thiết kế |
+| 🌪️ Phong | Cơ Động & Tình Báo | ✅ Framework hoàn chỉnh |
+| ❄️ Băng | Kiểm Soát & Phong Toả | ✅ Framework hoàn chỉnh |
 
 ---
 
