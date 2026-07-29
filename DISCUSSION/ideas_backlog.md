@@ -84,3 +84,80 @@ CHỐNG snowball bằng cách ép/dụ người chơi VA CHẠM liên tục.
 - [ ] **Ngưỡng "đủ người"**: cần cơ chế hạ ngưỡng theo thời gian / báo trước lịch (tránh khoá vĩnh viễn khi server vắng)
 - [ ] **Quân đăng ký rút lại được không**, hay khoá cứng tới khi đấu trường xong?
 - [ ] **Mercenary** = một tier trong hệ 7 tier, hay loại quân thuê tạm đánh xong giải tán? *(loại tạm hợp "lính đánh thuê" hơn + đốt tài nguyên; nối với tín dụng Băng: vay → thuê lính → thắng trả nợ / thua vỡ nợ)*
+
+---
+
+## 🧬 CHỦNG TỘC + TRUYỀN THỪA + TRIẾT LÝ GAMBLE (Session 2)
+
+> **Cảnh báo phụ thuộc:** Toàn bộ khối này về bản chất là cơ chế **Combat + Army** ("chọn tướng / item / lõi"). Đã thống nhất **định hướng**, chưa thể đóng chi tiết cho tới khi xương sống Combat thành hình. Đây là lý do Session 2 quyết định **tạm dừng faction để chốt xương sống Combat trước**.
+
+### Kiến trúc 3 tầng (đã thống nhất)
+
+```
+SERVER (element)  = khí hậu / môi trường vật lý       (8 loại, chọn 5/cụm)
+   └── CHỦNG TỘC  = nền sinh thái + ưu/nhược bẩm sinh  (Nhân / Thú / Ma — cả 3 cùng ở mỗi server)
+        └── THẾ LỰC (nghề) = vai trò người chơi         (10 nghề)
+```
+
+Ba tầng trả lời 3 câu khác nhau: Server = "khí hậu quanh tôi?"; Chủng tộc = "tôi là ai, ưu/nhược gì?"; Thế lực = "tôi làm nghề gì?".
+
+### Chủng tộc (đã thống nhất định hướng)
+
+| Chủng | Vai trò nghề | Trục đặc biệt | Cân bằng |
+|---|---|---|---|
+| **Nhân Tộc** | Generalist — làm được gần hết 10 nghề | Linh hoạt, phổ thông | Khá mọi mặt, KHÔNG đỉnh mặt nào |
+| **Thú Tộc** | Specialist — ~3-4 nghề | Thể chất / thần thú / hoang dã | Đỉnh một ngách, dở phần còn lại |
+| **Ma Tộc** | Specialist — ~3-4 nghề | Hắc ám / cấm thuật / trả giá | Làm được thứ Nhân+Thú bị cấm |
+
+- Mỗi chủng có **pool riêng**; pool gần cạn → **tặng quà dụ** người mới chọn phe thiếu (cơ chế MỀM: hết quà nhưng vẫn vào được, không khoá cứng). Đảm bảo mỗi server luôn đủ 3 chân sinh thái (Tam Quốc).
+- Ưu tiên cân bằng khi mâu thuẫn: **cân tộc trước, cân nghề sau** (thiếu tộc = sập sinh thái, nặng hơn thiếu nghề).
+- **Cần dọn:** "Dị Tộc / Thú Tộc" trong bảng 10 nghề hiện tại → Thú Tộc kéo lên tầng CHỦNG TỘC; ô nghề đó hoá thành **nghề đặc trưng Thú** (thần thú/hoang dã). Ma Tộc cần **nghề tà đạo mới**.
+
+### Chống "ai cũng chọn nghề độc quyền" — chồng nhiều lớp phanh nhẹ
+
+1. Slot nghề độc quyền **hiếm, khoá cứng** (đầy là đầy) — phanh chính.
+2. Độc quyền đi kèm **cái giá** (Ma bị ghét/truy nã hoặc tự ăn mòn) — tự giảm nhu cầu.
+3. Độc quyền **phụ thuộc nghề nền** mới sống (vòng phụ thuộc 10 mắt xích) — tham thì tự bỏ đói.
+4. **Quà dụ ngược** người chọn nghề nền đang thiếu — lấp đáy sinh thái.
+
+### Truyền Thừa Lão Tổ (thay giao diện "chọn nghề")
+
+- Đầu game: **Lão Tổ Truyền Thừa** hỏi loạt câu tình huống → GAME gán nghề (nâng cấp của quiz 8 câu đã có). Bọc logic phân bổ trong lore "cơ duyên" thay vì thuật toán khô khan.
+- **Bản chất = gamble.** Người chơi định hình xu hướng, không cầm chắc kết quả.
+
+### Triết lý GAMBLE / HIGH-VARIANCE (đã thống nhất — quan trọng)
+
+```
+Người chơi KHÔNG bỏ cuộc khi mở đầu xấu vì "không biết phía trước có gì"
+(TFT: giữ 2/3 lõi xấu vẫn chơi tiếp; ARAM: trận phế vẫn ở lại vì có thể spike lật ngược)
+        ↓
+Sự MƠ HỒ về tương lai + khả năng cú lật lớn = động cơ giữ chân
+```
+
+**Nhưng game 60 ngày KHÁC trận 20 phút — 3 bẫy phải xử:**
+- Cú lật của tôi = cú đè kéo dài NHIỀU NGÀY với người khác → phải **lật lại được**, kẻ bị đè phải có "ván sau".
+- "Trúng nâng cấp đúng" phải có **lõi kỹ năng**, không thuần hên → người thua thấy "học được", không thấy bị xử ép.
+- Variance cao + thời gian dài = phân hoá cực đoan → cần **van xả** (gộp cụm reset, Tam Quốc 2 đánh 1).
+
+**Thuốc giải đã có sẵn trong thiết kế:** Gộp cụm (ngày 31+) = "ván mới" giữa mùa; Tam Quốc 2-đánh-1 dìm kẻ dẫn đầu; đổi ngược Linh Thạch lossy = cơ chế comeback; truyền thừa gamble trong nhóm hợp mệnh = variance có khung.
+
+**Nguyên tắc chốt:** *High-variance chỉ vui khi cú lật xảy ra cho NHIỀU người, nhiều lần — không phải một người, một lần, rồi khoá.* Không giảm gamble — mà đảm bảo MỌI kết quả gamble đều có "phía trước đáng chơi" (dùng Cơ Duyên làm "carousel" lộ dần tương lai của nghề).
+
+### Ánh xạ nền tảng: LoL/TFT (định hướng toàn hệ)
+
+```
+CHỌN TƯỚNG  = Nghề / Chủng tộc (truyền thừa gamble)  → 03_faction + 04_character
+ITEM        = Quân đội                                → 05_army
+CHỌN LÕI    = Combat                                  → Map & Combat
+```
+
+Ba hệ là **tam giác khoá nhau** (đổi một đỉnh → hai đỉnh kia lệch), KHÔNG thiết kế rời được. Cú lật high-variance sống ở đỉnh **Combat** → phải chốt xương sống Combat trước khi hoàn thiện faction.
+
+### ❓ Câu hỏi treo — chốt khi làm Combat/Army
+
+- [ ] Gamble giới hạn trong **nhóm hợp mệnh** (đã chọn) — Cơ Duyên phải làm mỗi nghề "có phía trước hấp dẫn".
+- [ ] Cú lật ("ngồi lên đầu") **vĩnh viễn hay lật lại được?** *(khuyến nghị: lật lại được)*
+- [ ] Đường tới cú lật: **kỹ năng hay may rủi thuần?** *(khuyến nghị: có lõi kỹ năng)*
+- [ ] High-variance áp cho **gamble nghề đầu game** (một lần) hay **cơ chế tái diễn suốt mùa?** *(khuyến nghị: tái diễn — giữ chân tốt hơn)*
+- [ ] Truyền thừa **bắt buộc mọi người**, hay chỉ một con đường (có cửa thường)?
+- [ ] Ma Tộc "trả giá" cụ thể: bị xã hội ghét/truy nã, tự ăn mòn (mất dân/nhân tính), hay cả hai?

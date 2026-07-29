@@ -97,8 +97,29 @@ Pháp Gia → cần Tông Môn (Công nhận tâm linh)
 
 ---
 
+---
+
+## 🧬 Tầng Chủng Tộc (định hướng Session 2 — chờ Combat)
+
+> **Chưa hợp nhất vào framework trên.** Đây là định hướng đã thống nhất nhưng chưa đóng chi tiết vì phụ thuộc Combat/Army. Chi tiết đầy đủ + câu hỏi treo: `DISCUSSION/ideas_backlog.md` mục "Chủng Tộc + Truyền Thừa + Gamble".
+
+Thêm một tầng **phía trên** 10 thế lực:
+
+```
+SERVER (element) → CHỦNG TỘC (Nhân/Thú/Ma) → THẾ LỰC (nghề)
+```
+
+- Cả 3 chủng tộc cùng tồn tại trong mỗi server (đảm bảo hệ sinh thái Tam Quốc).
+- **Nhân** = generalist (gần hết 10 nghề); **Thú** = specialist thể chất/thần thú; **Ma** = specialist tà đạo/cấm thuật.
+- Mỗi chủng có **pool riêng**, cạn → tặng quà dụ (mềm, không khoá).
+- **Cần dọn:** "Dị Tộc/Thú Tộc" ở bảng trên sẽ tách — Thú Tộc lên tầng chủng tộc, ô nghề đó thành nghề đặc trưng Thú; Ma Tộc cần nghề tà đạo mới.
+- Chọn nghề qua **Truyền Thừa Lão Tổ** (gamble có định hướng, nâng cấp của quiz 8 câu).
+
+---
+
 ## ❓ Câu Hỏi Mở
 
 - [ ] Số lượng thế lực tối đa mỗi loại trong 1 server?
 - [ ] Thế lực có thể đổi loại giữa chừng không?
 - [ ] Quiz 8 câu — nội dung cụ thể từng câu?
+- [ ] Hợp nhất tầng chủng tộc vào framework (sau khi chốt Combat)
