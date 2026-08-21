@@ -80,7 +80,7 @@ CHỐNG snowball bằng cách ép/dụ người chơi VA CHẠM liên tục.
 - [ ] **Kẻ THUA tháp được gì?** Cần phần an ủi để không tay trắng → giữ cửa lật kèo. *(Đề xuất: thua tháp = mất phần thưởng + hồi quân tốn phí, KHÔNG mất quân vĩnh viễn)*
 - [ ] **"Đòi lại nhà" khó tới đâu?** Phải nằm khoảng giữa: đủ khả thi để dám cược, đủ tốn kém để kẻ đấm nhà vẫn lời. 3 điều kiện giữ chặt: (1) kẻ đấm nhà giữ được thành quả một thời gian; (2) đòi lại phải TIÊU nguồn lực; (3) không phải lúc nào cũng đòi lại đủ (thủ tốt/liên minh có thể giữ)
 - [ ] **Library độc quyền Băng hay công trình chung** đặt ở đất Băng? *(khuyến nghị: chung + lợi thế sân nhà — tránh Băng gánh cả kinh tế lẫn cửa endgame)*
-- [ ] **"Thứ không thể từ chối" là gì?** *(khuyến nghị: tài nguyên hiếm + cơ hội/quyền, TRÁNH sức mạnh vĩnh viễn. "Không từ chối" = sức hút, không phải cưỡng bức — giữ AFK Core)*
+- [ ] **"Thứ không thể từ chối" là gì?** *(khuyến nghị: tài nguyên hiếm + cơ hội/quyền, TRÁNH sức mạnh vĩnh viễn. "Không từ chối" = sức hút, không phải cưỡng bức — giữ Bế Quan chỉ là lớp hỗ trợ tài nguyên)*
 - [ ] **Ngưỡng "đủ người"**: cần cơ chế hạ ngưỡng theo thời gian / báo trước lịch (tránh khoá vĩnh viễn khi server vắng)
 - [ ] **Quân đăng ký rút lại được không**, hay khoá cứng tới khi đấu trường xong?
 - [ ] **Mercenary** = một tier trong hệ 7 tier, hay loại quân thuê tạm đánh xong giải tán? *(loại tạm hợp "lính đánh thuê" hơn + đốt tài nguyên; nối với tín dụng Băng: vay → thuê lính → thắng trả nợ / thua vỡ nợ)*
