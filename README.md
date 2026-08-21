@@ -93,16 +93,14 @@ Mobile không được kéo thiết kế thành idle/mobile-first. Nếu phải 
 ```text
 GDD/
 ├── 00_overview.md              # Vision, roleplay, biome, bế quan
-├── 01_starting_roles.md        # Vai lãnh đạo khởi đầu
 ├── 02_server_system/           # 8 element server + cụm server
-├── 03_faction_system/          # 10 thế lực + tầng chủng tộc
+├── 03_faction_system/          # 5 role khởi đầu + khung thế lực
 ├── 04_character_system/        # Nhân vật, tướng, role, skill
-├── 05_army_system/             # Quân đội, tier quân, tướng dẫn quân
-├── 06_resource_system/         # Tài nguyên, Linh Mạch, tiền tệ
+├── 05_army_system/             # Quân đội, tier quân, di chi truyen thua
+├── 06_resource_system/         # Tài nguyên, Linh Mạch, tiền tệ, tranh đoạt
 ├── 07_social_system/           # Roleplay, drama, reputation, social
 ├── 08_combo_system/            # Combo emergent, chờ combat/map
 ├── 09_monetization.md          # Anti-P2W
-├── 10_biome_progression.md     # Biome 1 -> Biome 2 -> endgame
 └── 11_map_system.md            # Map, node, movement, resource point
 
 DISCUSSION/
@@ -129,7 +127,7 @@ DISCUSSION/
 
 ## Thứ Tự Thiết Kế Tiếp Theo
 
-1. **Role & Starting Fantasy** — danh sách vai lãnh đạo, khác biệt khởi đầu, mục tiêu vực dậy thế lực.
+1. **Faction Revival & Starting Identity** — cách mỗi thế lực khởi đầu suy tàn, mục tiêu vực dậy, khác biệt vai lãnh đạo.
 2. **Biome 1** — vùng khởi đầu của tiểu thiên thế giới, PvE/event/cơ duyên/tutorial không lộ liễu.
 3. **Biome 2** — vùng gặp người chơi/thế lực khác, luật roleplay, ngoại giao, conflict, alliance.
 4. **Map System** — layout Heroes 3/Jebus-style nhưng phục vụ roleplay và lãnh thổ.

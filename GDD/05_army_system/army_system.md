@@ -1,162 +1,160 @@
-# Hệ Thống Quân Đội
+# He Thong Quan Doi
 
-## Triết Lý Heroes 3
+## Triet Ly Chung
 
-```
-7 tier quân mỗi thế lực
-Tier cao = mạnh hơn nhưng đắt hơn + cần kiến trúc cao hơn
-Số lượng quan trọng không kém chất lượng
-Mix tier tạo chiến thuật đa dạng
-```
+Biome 1 chi co quan nen tier 1-2. Tier 3-7 chi mo o Biome 2 thong qua di tich truyen thua / thanh tri truyen thua. Truyen thua dut gay, nen tier 1-2 giong nhau giua cac the luc. Khac biet that su nam o tinh chat cua truyen thua va role the luc.
 
 ---
 
-## 7 Tier Quân — Ví Dụ Tông Môn
+## Khung 7 Tier Quan
 
-| Tier | Quân | Kiến Trúc Cần | Đặc Tính |
-|---|---|---|---|
-| 1 | Ngoại Môn Đệ Tử | Ngoại Môn Đường | Số lượng lớn, yếu |
-| 2 | Nội Môn Đệ Tử | Nội Môn Đường + Tàng Kinh Các cơ bản | Cân bằng |
-| 3 | Chân Truyền Đệ Tử | Chân Truyền Viện | Skill đa dạng |
-| 4 | Thủ Hộ Linh Vệ | Linh Vệ Đường + Luyện Võ Trường | Tank tiền tuyến |
-| 5 | Trưởng Lão Chiến Đấu | Trưởng Lão Các | Cá nhân rất mạnh |
-| 6 | Hộ Pháp | Hộ Pháp Điện + Tàng Kinh Các tier 3 | Boss unit |
-| 7 | Thần Tăng / Kiếm Tiên | Thượng Cổ Điện (hiếm) | 1 người = 1000 quân |
+| Tier | Trang thai | Vai tro |
+|---|---|---|
+| 1 | Quan nen co ban | Luyen The, dung kiem / phep / cung co ban |
+| 2 | Quan nen nang cap | Truc Co so cap, can dau tu dan so va tai nguyen |
+| 3 | Quan truyen thua so cap | Mo tu di tich truyen thua cap thap |
+| 4 | Quan truyen thua trung cap | Mo tu thanh tri truyen thua hoan chinh |
+| 5 | Quan truyen thua cao cap | Can nhieu di chi cung he |
+| 6 | Quan tinh anh dac thu | Phu thuoc kien thuc da phuc dung |
+| 7 | Quan dinh di san | Cuc hiem, gan voi di san server / season |
 
----
-
-## Sản Xuất & Giới Hạn
-
-| Tier | Sản Xuất | Lương/Ngày | Thời Gian Chiêu Mộ |
-|---|---|---|---|
-| 1 | 50 quân/ngày | 1 lương/10 quân | 1 giờ thực |
-| 2 | 20 quân/ngày | 1 lương/5 quân | 3 giờ thực |
-| 3 | 10 quân/ngày | 1 lương/3 quân | 6 giờ thực |
-| 4 | 5 quân/ngày | 1 lương/quân | 12 giờ thực |
-| 5 | 2 quân/ngày | 2 lương/quân | 1 ngày thực |
-| 6 | 1 quân/2 ngày | 5 lương/quân | 3 ngày thực |
-| 7 | 1 quân/tuần | 20 lương/quân | 7 ngày thực |
+Tier 1-2 la bo nen chung, gan nhu moi the luc deu co. Tier 3-7 la phan tao khac biet giua cac the luc va chi co khi phuc dung dung di chi.
 
 ---
 
-## Tổn Thất & Hồi Phục
+## Cau Truc Theo Biome
 
-| Tier | Hồi Phục |
+### Biome 1 - Quan Nen Chung
+
+| Tier | Quan | Mo ta |
+|---|---|---|
+| 1 | Luyen The | So luong lon, dung vat luc / kiem / phep co ban |
+| 2 | Truc Co so cap | Luyen The duoc dau tu tai nguyen + dan so de chuyen hoa |
+
+Biome 1 chi de nguoi choi lam quen nhip quan, hau can va tieu hao. Khong mo tier cao hon.
+
+### Biome 2 - Quan Tu Di Tich Truyen Thua
+
+| Tier | Nguon mo | Mo ta |
+|---|---|---|
+| 3 | Di tich truyen thua cap thap | Bat dau co quan mang ban sac rieng |
+| 4 | Thanh tri truyen thua | Cho phep mua va dao tao quan cao hon |
+| 5 | Mang luoi di chi cung he | Tao nen cho quan elite |
+| 6 | Phuc dung kien thuc hoan chinh | Mo quan tinh anh, tuy role phu hop |
+| 7 | Di san dinh cao | Quan win-condition hiem va dat |
+
+---
+
+## Ty Le Chuyen Doi Theo Role
+
+Quy uoc: x Luyen The -> 1 Truc Co. So x cang nho thi the luc cang de chuyen so luong thanh chien luc.
+
+| Role | Ty le de xuat | Diem manh | Diem yeu |
+|---|---:|---|---|
+| Hoang Trieu | 12:1 | Dan dong, tap quyen, chuyen doi nhanh | Hau can nang, de cong kenh |
+| Hoc Vien | 15:1 | Dao tao bai ban, chat luong on dinh | It bung no so luong |
+| Tong Mon | 18:1 | Tinh anh, hoc nhanh, quan co ky nang | Dau vao khat khe |
+| The Gia | 20:1 | Huyet mach va noi toc on | Quy mo trung binh, kho mo rong nhanh |
+| Bang Phai | 24:1 | Chieu mo linh hoat, thich ung tot | Ky luat thap, kho ep chuyen hoa hang loat |
+
+### Y nghia role
+
+Moi role khong chi la loi the, ma con la han che. Chon dung role giup phuc dung nhanh hon. Chon lech role van choi duoc, nhung phai tra gia bang tai nguyen, thoi gian hoac hieu suat.
+
+### Huong chuyen doi cap 2
+
+| Role | Cach len cap 2 |
 |---|---|
-| 1-2 | 50% tự nhiên sau 1 ngày |
-| 3-4 | Cần Đan Dược + thời gian |
-| 5-6 | Cần Đan Dược cao cấp + lệnh Gia Chủ |
-| 7 | Mất 1 = mất vĩnh viễn (hoặc cực kỳ tốn kém) |
+| Hoang Trieu | Chuyen dan thanh quan nhanh, doi bang tai nguyen va luat le |
+| Hoc Vien | Dung dao tao chuan, it hao ton hon nhung cham hon Hoang Trieu |
+| Tong Mon | Phu thuoc truyen thua, phap mon va co so tu hanh |
+| The Gia | Phu thuoc huyet mach, noi toc va tai san gia toc |
+| Bang Phai | Dua vao thu linh, danh vong va kha nang gom nguoi |
 
 ---
 
-## Hệ Thống Cấp Độ Quân — Cấp 1 vs Cấp 2
+## Di San Truyen Thua La Thu Quyet Dinh
 
-### Nguyên Tắc
+O Biome 2, hang loat thanh tri / di tich truyen thua se quyet dinh quyen mua tier cao.
 
-```
-Cấp 1: giống nhau ở mọi server (cùng tier)
-Cấp 2: phiên bản đặc thù theo element server
-       Dùng Linh Thạch Có Thuộc Tính từ Linh Mạch Trung
-       Tiêu hao liên tục — mất Linh Mạch Trung = suy yếu dần
-```
+- Thanh tri co the bi cuop.
+- Khi bi cuop, mat quyen mua quan tier cao tai do.
+- Quan da mua van duoc giu lai.
+- Quan da mua mat buff / training tu thanh tri cho den khi chiem lai hoac tim duoc nguon thay the.
+- Kien thuc da hoc, cong trinh da xay, va loi mo da phuc dung van con lai.
+- Day la co che phuc dung di chi, khong phai mat sach tat ca.
+- Moi di chi ban dau chi la mot dia diem; nguoi choi co the chiem nhieu dia diem, nhung khong co nghia du nang luc phuc dung toan bo he thong cua tat ca di chi do.
 
-### Ví Dụ So Sánh Cấp 2 Theo Server
+Nghia la: nguoi choi co the mat quyen khai thac hien tai, nhung khoi kien thuc da dat duoc van giu.
 
-| Server | Đặc Tính Cấp 2 | Lợi Thế | Bất Lợi Khi Ra Ngoài |
+Di chi lien quan truc tiep toi kinh te, ngoai giao va tranh doat. Chiem di chi khong chi la mo tier cao, ma con la giu quyen mua, giu co so dao tao va giu vi the trong he sinh thai.
+
+---
+
+## Di Chi Truyen Thua Theo Nhom Nganh
+
+Di chi truyen thua khong phai class cung va khong nen chot thanh danh sach dong qua som. Ban prototype dung 8 nhom nganh Biome 2 lam khung, moi nhom co the sinh ra nhieu di chi con tuy map/season. Ve sau co the them nganh moi ma khong phai pha cau truc army.
+
+| Nhom di chi | Vai tro nganh | Huong quan tier cao | Role khoi dau hop hon |
 |---|---|---|---|
-| Hoả | AOE lửa, burn damage | Mạnh trong Hoả server | -5%/ngày thiếu Hoả linh khí |
-| Kim | Xuyên giáp 20% + liên địa hình | Không bị yếu ở đâu | Đắt nhất để duy trì |
-| Mộc | +40% PvE, hồi phục nhanh | Trong rừng gần như vô địch | -15% PvP |
-| Thuỷ | Buff liên quân +15-40% | Keo kết dính liên minh | Yếu khi solo |
-| Thổ | Biển Người buff cộng hưởng | Đông = mạnh | Mất buff khi bị chia cắt |
-| Lôi | Tác chiến độc lập +20% | Không cần tướng dẫn | Ít quân nhất |
+| Chien Dau | kiem tu, luyen the, phap chien, danh thue | Don dau, tank, burst, danh boss, escort | Tong Mon, The Gia, Bang Phai |
+| Cong Trinh/Tran Phap | tran phap, ky su di chi, cong/thu thanh | Quan tran, thu thanh, cong thanh, ket gioi | Hoang Trieu, Hoc Vien |
+| Luyen Che | luyen khi, phu luc, co quan | Trang bi, phap bao, trap, may cong thanh | Hoc Vien, Hoang Trieu, Tong Mon |
+| Dan Duoc/Sinh Ton | dan su, duoc vien, y su chien truong | Hoi phuc, dot pha, giam hao hut, buff chien tranh dai ngay | Tong Mon, Hoc Vien, The Gia |
+| Thuong Mai/Hau Can | thuong hoi, kho, van tai, tin dung | Nuoi quan, thue quan, tiep te xa, kinh te chien | Hoang Trieu, Bang Phai, Hoc Vien |
+| Tinh Bao/Ngam | mat tham, am tu, Tong Thien Nhan | Scout, pha hoai, am sat NPC, false flag | Bang Phai, The Gia |
+| Ngoai Giao/Phap Ly | Phap Gia, ngoai giao, danh vong | Hop dong chien tranh, truy na, bao lanh, chinh danh | Hoang Trieu, The Gia, Hoc Vien |
+| Ho Tro Dac Thu/Moi Truong | ngu thu, linh moc, khai hoang | Linh thu, nguyen lieu hiem, scout hoang da, mo vung moi | The Gia, Tong Mon, Bang Phai |
 
----
+Moi role co the theo moi nhom, nhung phai tra gia neu lech identity. Vi du Bang Phai co the phuc dung Tran Phap, nhung vi ky luat va ty le chuyen doi kem, chi phi van hanh quan tran lon se cao hon Hoang Trieu.
 
-## Tướng Dẫn Quân
+## Mo Hinh Di Tich Truyen Thua
 
-```
-1 Tướng dẫn tối đa 7 đơn vị quân (7 slot)
-Mỗi slot = 1 loại quân, số lượng tùy
-```
-
-### Skill Tướng Ảnh Hưởng Quân
-
-| Skill Tướng | Hiệu Ứng |
+| Loai | Tac dung |
 |---|---|
-| Thống Lĩnh cao | Số lượng quân mang được nhiều hơn |
-| Chiến Thuật | Được đi trước trong combat |
-| Hậu Cần | Tiêu ít lương hơn khi hành quân |
-| Truyền Cảm Hứng | Buff sĩ khí toàn đội |
-
-### Ví Dụ Đội Hình Hoàng Triều
-
-```
-Tướng: Đại Tướng Quân [Thống Lĩnh 8, Chiến Thuật 6]
-├── Slot 1: 500 Dân Binh (tier 1) — thịt đỡ đạn
-├── Slot 2: 200 Bộ Binh Chính Quy (tier 2) — nền tảng
-├── Slot 3: 100 Thần Nỏ Thủ (tier 3) — tầm xa
-├── Slot 4: 50 Kỵ Binh Hoàng Gia (tier 4) — flanking
-├── Slot 5: 20 Thiết Giáp Binh (tier 5) — phá thành
-├── Slot 6: 5 Huyền Vũ Đội (tier 6) — elite
-└── Slot 7: 1 Chiến Thần Đại Tướng (tier 7) — win condition
-```
+| Di tich cap thap | Mo mot phan tier 3 |
+| Di tich trung cap | Mo tier 4 va mot phan tier 5 |
+| Thanh tri truyen thua | Mo tier 5-6 |
+| Cum di chi cung he | Mo tier 7 cuc hiem |
 
 ---
 
-## Liên Quân
+## Tien Trinh Phuc Dung
 
-```
-Trận lớn = nhiều tướng từ nhiều thế lực:
+1. Tim di tich.
+2. Danh giam quyen mua.
+3. Phuc dung kien thuc.
+4. Xay lai co so.
+5. Mo lai quyen mua quan cao.
+6. Giu vung di tich.
 
-Hoàng Triều: 3 tướng × 7 slot
-Thế Gia:     2 tướng × 7 slot
-Tông Môn:    1 tướng × 7 slot (ít nhưng mạnh)
-        ↓
-Cần: Minh Chủ phân công vị trí
-     Phù Lục setup trận pháp trước
-     Đan Môn chuẩn bị hậu cần
-```
+Neu bi cuop, nguoi choi co the mat quyen mua, nhung khong mat het tat ca. Kien thuc va cong trinh da hoc duoc se con, nen canh tranh chinh la tranh quyen so huu hien tai.
 
 ---
 
-## Hậu Cần — Tộc Hệ Liên Kết
+## So Sanh Giua Cac Role
 
-```
-Không phải "quân qua núi tốn lương gấp đôi" đơn giản
-Mà là "ai lo hậu cần quyết định ai thắng"
-
-Thổ/Nông Gia → sản xuất lương thực
-Thương Hội → vận chuyển, tuyến đường
-Phù Lục → Truyền Tống Trận rút ngắn tuyến
-Hoàng Triều → Hành Chính quản lý phân phối
-Đan Môn → đan dược duy trì sức chiến đấu dài ngày
-```
-
-Gia Chủ nhận đề xuất từ Hậu Cần Quan — không tự micro quản lý.
+| Role | Manh nhat o | Yeu nhat o |
+|---|---|---|
+| Hoang Trieu | Quan so, to chuc, chuyen doi nhanh | Hau can, cong kenh |
+| Tong Mon | Tinh anh, truyen thua, don vi elite | Kho mo rong dai tra |
+| Hoc Vien | Dao tao, tri thuc, mo khoa nhanh | Khong bung no so luong |
+| The Gia | Noi toc, buff gia toc | Phu thuoc huyet mach va quan he |
+| Bang Phai | Linh hoat, tuong tac nhanh | Ky luat va on dinh kem |
 
 ---
 
-## Chiến Lược Ẩn Nhẫn
+## Ghi Chu Thiet Ke
 
-```
-Không tham chiến 10 ngày đầu Season War
-Tích lũy quân tier 5 trong khi người khác hao mòn
-Ngày 11 xuất chinh → áp đảo
-
-Counter:
-├── Tình Báo phát hiện → cảnh báo
-├── Phong tỏa kinh tế → cắt nguồn Linh Thạch
-├── Đánh sớm trước khi đủ quân
-└── Mua chuộc nội gián biết ngày xuất chinh
-```
+- Tier 1-2 la chung cho moi the luc.
+- Tier 3-7 chi mo o Biome 2.
+- Truyen thua bi dut gay nen phuc dung bang chinh su dung di chi la van de trung tam.
+- Role chi quyet dinh toc do va hieu suat, khong dong nghia voi khoa mat content.
 
 ---
 
-## ❓ Câu Hỏi Mở
+## Cau Hoi Mo
 
-- [ ] 7 tier quân đầy đủ cho tất cả 10 thế lực — cần thiết kế chi tiết
-- [ ] Quân bị chia cắt khỏi hậu cần — suy yếu theo tốc độ nào?
-- [ ] Sĩ khí cơ chế cụ thể — ảnh hưởng đến combat thế nào?
-- [ ] Quân Lôi tự ý hành động trong liên quân — cơ chế kiểm soát?
+- [ ] Co chot 1 bo cong thuc chuyen doi chung cho moi role khong?
+- [ ] Tier 3-7 se co bao nhieu chung loai tren moi server?
+- [ ] Di tich truyen thua co reset theo season hay giu vinh vien?

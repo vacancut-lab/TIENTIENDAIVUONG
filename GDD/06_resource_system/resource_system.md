@@ -9,7 +9,7 @@
 | Heroes 3 | Vai trò | Bản game |
 |---|---|---|
 | Gold | Tiền vạn năng | **Linh Thạch** (3 mệnh giá Hạ/Trung/Thượng) |
-| Wood + Ore | Phổ thông | Tài nguyên xây dựng cơ bản *(cần chốt: gỗ/đá/lương?)* |
+| Wood + Ore | Phổ thông | **Gỗ, Đá, Lương thực** (tài nguyên xây dựng cơ bản) |
 | Mercury/Sulfur/Crystal/Gems | Hiếm | **Tài nguyên đặc thù theo server** (Lôi Châu, Hoả Long Cốt, Vạn Niên Hàn Thiết…) |
 
 > Điểm mạnh hơn Heroes 3: tài nguyên hiếm **đặc trưng theo server** (không rải toàn map) → ép giao thương xuyên server → đúng **Scarcity-Driven**.
