@@ -93,6 +93,7 @@ Mobile không được kéo thiết kế thành idle/mobile-first. Nếu phải 
 ```text
 GDD/
 ├── 00_overview.md              # Vision, roleplay, biome, bế quan
+├── 01_starting_roles.md        # Vai lãnh đạo khởi đầu
 ├── 02_server_system/           # 8 element server + cụm server
 ├── 03_faction_system/          # 10 thế lực + tầng chủng tộc
 ├── 04_character_system/        # Nhân vật, tướng, role, skill
@@ -100,7 +101,9 @@ GDD/
 ├── 06_resource_system/         # Tài nguyên, Linh Mạch, tiền tệ
 ├── 07_social_system/           # Roleplay, drama, reputation, social
 ├── 08_combo_system/            # Combo emergent, chờ combat/map
-└── 09_monetization.md          # Anti-P2W
+├── 09_monetization.md          # Anti-P2W
+├── 10_biome_progression.md     # Biome 1 -> Biome 2 -> endgame
+└── 11_map_system.md            # Map, node, movement, resource point
 
 DISCUSSION/
 ├── pending_decisions.md        # Câu hỏi chưa chốt
