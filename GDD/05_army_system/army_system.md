@@ -2,7 +2,7 @@
 
 ## Triet Ly Chung
 
-Biome 1 chi co quan nen tier 1-2. Tier 3-7 chi mo o Biome 2 thong qua di tich truyen thua / thanh tri truyen thua. Truyen thua dut gay, nen tier 1-2 giong nhau giua cac the luc. Khac biet that su nam o tinh chat cua truyen thua va role the luc.
+Biome 1 chi co quan nen tier 1-2. Tier 3-7 chi mo o Biome 2 thong qua Di Chi Truyen Thua. Truyen thua dut gay, nen tier 1-2 giong nhau giua cac the luc. Khac biet that su nam o tinh chat cua truyen thua va role the luc.
 
 ---
 
@@ -12,8 +12,8 @@ Biome 1 chi co quan nen tier 1-2. Tier 3-7 chi mo o Biome 2 thong qua di tich tr
 |---|---|---|
 | 1 | Quan nen co ban | Luyen The, dung kiem / phep / cung co ban |
 | 2 | Quan nen nang cap | Truc Co so cap, can dau tu dan so va tai nguyen |
-| 3 | Quan truyen thua so cap | Mo tu di tich truyen thua cap thap |
-| 4 | Quan truyen thua trung cap | Mo tu thanh tri truyen thua hoan chinh |
+| 3 | Quan truyen thua so cap | Mo tu Di Chi Truyen Thua cap thap |
+| 4 | Quan truyen thua trung cap | Mo tu Di Chi Truyen Thua hoan chinh |
 | 5 | Quan truyen thua cao cap | Can nhieu di chi cung he |
 | 6 | Quan tinh anh dac thu | Phu thuoc kien thuc da phuc dung |
 | 7 | Quan dinh di san | Cuc hiem, gan voi di san server / season |
@@ -37,7 +37,7 @@ Biome 1 chi de nguoi choi lam quen nhip quan, hau can va tieu hao. Khong mo tier
 
 | Tier | Nguon mo | Mo ta |
 |---|---|---|
-| 3 | Di tich truyen thua cap thap | Bat dau co quan mang ban sac rieng |
+| 3 | Di Chi Truyen Thua cap thap | Bat dau co quan mang ban sac rieng |
 | 4 | Thanh tri truyen thua | Cho phep mua va dao tao quan cao hon |
 | 5 | Mang luoi di chi cung he | Tao nen cho quan elite |
 | 6 | Phuc dung kien thuc hoan chinh | Mo quan tinh anh, tuy role phu hop |
@@ -75,7 +75,7 @@ Moi role khong chi la loi the, ma con la han che. Chon dung role giup phuc dung 
 
 ## Di San Truyen Thua La Thu Quyet Dinh
 
-O Biome 2, hang loat thanh tri / di tich truyen thua se quyet dinh quyen mua tier cao.
+O Biome 2, hang loat thanh tri / Di Chi Truyen Thua se quyet dinh quyen mua tier cao.
 
 - Thanh tri co the bi cuop.
 - Khi bi cuop, mat quyen mua quan tier cao tai do.
@@ -157,4 +157,4 @@ Neu bi cuop, nguoi choi co the mat quyen mua, nhung khong mat het tat ca. Kien t
 
 - [ ] Co chot 1 bo cong thuc chuyen doi chung cho moi role khong?
 - [ ] Tier 3-7 se co bao nhieu chung loai tren moi server?
-- [ ] Di tich truyen thua co reset theo season hay giu vinh vien?
+- [ ] Di Chi Truyen Thua co reset theo season hay giu vinh vien?

@@ -48,7 +48,7 @@ Tỉnh dậy/tiếp quản trong biome 1 của tiểu thiên thế giới
         ->
 Khôi phục căn cơ: tài nguyên, nhân tài, công trình, quân đội, nội bộ
         ->
-Khám phá biome 1: fog, node, di tích, quái, cơ duyên, bí mật của đại năng tọa hóa
+Khám phá biome 1: fog, node, di chỉ, quái, cơ duyên, bí mật của đại năng tọa hóa
         ->
 Vượt ngưỡng biome 1: đủ lực / đủ danh vọng / mở cổng / phá phong ấn
         ->
@@ -84,7 +84,7 @@ Mục tiêu của biome 1:
 - vật liệu nền ở biome 1 gồm gỗ, đá, lương thực và linh thạch cấp thấp
 - boss phụ có thể tồn tại để tạo reward, lore, hoặc đường tắt, nhưng không bắt buộc
 - chuẩn bị người chơi bước vào môi trường xã hội/phức tạp hơn ở biome 2
-- quân tier 1-2 là quân nền giống nhau do truyền thừa đứt gãy; tier 3-7 chỉ mở ở biome 2 thông qua di tích / thành trì truyền thừa
+- quân tier 1-2 là quân nền giống nhau do truyền thừa đứt gãy; tier 3-7 chỉ mở ở biome 2 thông qua Di Chỉ Truyền Thừa
 - mỗi di chỉ truyền thừa ban đầu là một địa điểm; người chơi có thể chiếm nhiều địa điểm, nhưng không có nghĩa đủ năng lực xây dựng hoặc phục dựng toàn bộ hệ thống của tất cả di chỉ đó
 
 ### Biome 2 — Roleplay Giữa Các Bên
@@ -95,14 +95,14 @@ Biome 2 phải có:
 
 - nhiều thế lực/người chơi cùng tồn tại
 - tài nguyên không đủ cho tất cả
-- vùng trung lập, điểm nghẽn, tuyến giao thương, Linh Mạch, di tích
-- hàng loạt di tích / thành trì truyền thừa kiểu Heroes 3, quyết định quyền mua và phục dựng quân tier cao
+- vùng trung lập, điểm nghẽn, tuyến giao thương, Linh Mạch, di chỉ
+- hàng loạt Di Chỉ Truyền Thừa kiểu Heroes 3, quyết định quyền mua và phục dựng quân tier cao
 - luật ngoại giao và reputation đủ mạnh để lời hứa/phản bội có hậu quả
 - cơ chế để người chơi roleplay thân phận: tông chủ nói khác hoàng đế, bang chủ hành xử khác thương chủ
 - các role ở Biome 2 phải là vai sống động, liên kết chặt với nhau; mỗi ngành là một role quan trọng, có cây kỹ năng riêng và càng phát triển càng mạnh nhưng cũng càng phụ thuộc vào ngành khác
 - có thể nghiên cứu song song nhiều ngành, nhưng sẽ tốn rất nhiều thời gian và chi phí
-- ví dụ khí đạo hỗ trợ các ngành cần vũ khí; kỹ sư cần bản vẽ, công nhân và nguyên liệu để thi công; không có ngành nào là phụ hoàn toàn
-- ví dụ đan đạo có thể tự túc đan dược, nhưng yếu tranh đấu; vẫn phải nhờ phe khác hỗ trợ nhiệm vụ truyền thừa, mua vật phẩm phục dựng di chỉ, hoặc đánh thuê khi cần
+- ví dụ Luyện Chế hỗ trợ các ngành cần vũ khí; kỹ sư cần bản vẽ, công nhân và nguyên liệu để thi công; không có ngành nào là phụ hoàn toàn
+- ví dụ Đan Dược có thể tự túc đan dược, nhưng yếu tranh đấu; vẫn phải nhờ phe khác hỗ trợ nhiệm vụ truyền thừa, mua vật phẩm phục dựng di chỉ, hoặc đánh thuê khi cần
 - người chơi có thể sống một mình nếu muốn, nhưng để tạo được hệ sinh thái mạnh thì vẫn phải phụ thuộc người khác theo kiểu trao đổi hai chiều
 - tài nguyên không tự sinh ra là chính; phần lớn tăng trưởng đến từ tranh đoạt, chiếm giữ, giao thương, bảo kê và hợp tác
 - nguồn tài nguyên càng hiếm càng dễ kéo theo xung đột xã hội, drama, phản bội và hiệp ước
@@ -115,8 +115,8 @@ Biome 2 có thể chia thành 8 nhóm ngành chính. Mỗi nhóm là một role 
 |---|---|---|---|
 | Chiến Đấu | đánh nhau, hộ tống, chiếm điểm | vũ khí, hậu cần, y tế | Kiếm Tu, Thể Tu |
 | Công Trình | xây thành, thủ thành, phục dựng di chỉ | vật liệu, nhân lực, phù lục | Trận Pháp, Kỹ Sư |
-| Luyện Chế | làm trang bị, bẫy, công cụ | quặng, linh thảo, bản vẽ | Khí Đạo, Phù Lục |
-| Đan Dược | hồi phục, đột phá, nuôi quân | linh thảo, bảo vệ, thương mại | Đan Đạo, Dược Sư |
+| Luyện Chế | làm trang bị, bẫy, công cụ | quặng, linh thảo, bản vẽ | Luyện Khí, Phù Lục |
+| Đan Dược | hồi phục, đột phá, nuôi quân | linh thảo, bảo vệ, thương mại | Đan Sư, Dược Sư |
 | Thương Mại | vận tải, mua bán, cung ứng | an ninh, pháp lý, sản xuất | Thương Hội, Hậu Cần |
 | Tình Báo | scout, ngầm, phá hoại, drama | tiền, luật, quan hệ, ngụy trang | Mật Thám, Ám Tử |
 | Ngoại Giao | hiệp ước, giải quyết tranh chấp | uy tín, pháp lý, quà tặng | Pháp Gia, Ngoại Giao Quan |
@@ -131,10 +131,10 @@ Biome 2 có thể chia thành 8 nhóm ngành chính. Mỗi nhóm là một role 
 
 ### Vi Du Role
 
-- Đan đạo có thể tự túc đan dược và nuôi sống thế lực nhỏ.
+- Đan Dược có thể tự túc đan dược và nuôi sống thế lực nhỏ.
 - Nhưng nếu yếu tranh đấu, muốn leo tier cao thì phải thuê phe chiến đấu làm nhiệm vụ truyền thừa.
-- Muốn mua vật phẩm phục dựng di chỉ, đan đạo cần thương hội, pháp lý hoặc thế lực bảo kê.
-- Khí đạo cần quặng, bản vẽ, thợ và người vận chuyển.
+- Muốn mua vật phẩm phục dựng di chỉ, Đan Dược cần thương hội, pháp lý hoặc thế lực bảo kê.
+- Luyện Chế cần quặng, bản vẽ, thợ và người vận chuyển.
 - Trận pháp cần vật liệu, nhân lực, phù lục và thời gian.
 - Mật thám sống bằng thông tin khan hiếm, nên phải bám vào hậu cần, pháp lý và drama.
 

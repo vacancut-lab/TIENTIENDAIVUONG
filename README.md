@@ -94,9 +94,9 @@ Mobile không được kéo thiết kế thành idle/mobile-first. Nếu phải 
 GDD/
 ├── 00_overview.md              # Vision, roleplay, biome, bế quan
 ├── 02_server_system/           # 8 element server + cụm server
-├── 03_faction_system/          # 5 role khởi đầu + khung thế lực
+├── 03_faction_system/          # 5 role khởi đầu + ngành nghề Biome 2
 ├── 04_character_system/        # Nhân vật, tướng, role, skill
-├── 05_army_system/             # Quân đội, tier quân, di chi truyen thua
+├── 05_army_system/             # Quân đội, tier quân, Di Chỉ Truyền Thừa
 ├── 06_resource_system/         # Tài nguyên, Linh Mạch, tiền tệ, tranh đoạt
 ├── 07_social_system/           # Roleplay, drama, reputation, social
 ├── 08_combo_system/            # Combo emergent, chờ combat/map

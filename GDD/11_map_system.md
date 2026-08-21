@@ -16,7 +16,7 @@ Tham chieu cam giac:
 
 | Nguyen Tac | Y Nghia |
 |---|---|
-| Moi thu quan trong co vi tri | Tai nguyen, di tich, NPC, hiep uoc, chien tranh deu gan voi diem/vung. |
+| Moi thu quan trong co vi tri | Tai nguyen, di chi, NPC, hiep uoc, chien tranh deu gan voi diem/vung. |
 | Duong di la quyet dinh | Di dau truoc, mo duong nao, bo node nao phai tao he qua. |
 | Fog tao chinh tri | Khong biet het map -> can tinh bao, giao dich thong tin, lua dao. |
 | Choke tao drama | Diem nghen buoc ngoai giao, phuc kich, bao ke, thu phi. |
@@ -64,28 +64,28 @@ Tieu Thien The Gioi
 - Resource cung cap cho moi nganh deu co hai nguon: tu sinh va tranh doat.
 - Tu day roleplay/social tro thanh he thong chinh.
 
-### Role Dong Trong Biome 2
+### Nganh Nghe Song Trong Biome 2
 
-Biome 2 khong chay theo class co dinh. Moi role phai la mot nghe song, co quan he mau thit voi cac nghe khac.
+Biome 2 khong chay theo class co dinh. Moi nganh la mot vai song, co quan he mau thit voi cac nganh khac va co vi tri tren map.
 
-| Role | Chuc nang | Phu thuoc | Co the ho tro |
+| Nhom nganh | Chuc nang | Phu thuoc | Co the ho tro |
 |---|---|---|---|
-| Kinh Doanh / Thuong Hoi | tai chinh, van tai, roi kinh te | bao ve, san xuat, phap ly | tat ca cac nganh |
-| Khí Dao | vu khi, phap bao, trang bi | kim loai, ban ve, cong nhan | kiem, thuong, tran, the |
-| Phù Lục | phong an, buff, ha che | vat lieu, tri thuc, nguoi ve | tran phap, ngoai giao, bao ve |
-| Trận Pháp | quan tran, thanh tri, phuc thu | phu luc, van tai, nhan luc | hoang trieu, the gia |
-| Mật Thám | thong tin, cai nguoi, false flag | tien bac, phap ly, tinh bao | moi role khac |
+| Thuong Mai / Hau Can | tai chinh, van tai, kho, tin dung | bao ve, san xuat, phap ly | tat ca cac nganh |
+| Luyen Che | vu khi, phap bao, trang bi, vat pham phuc dung | quang, ban ve, cong nhan, van tai | chien dau, tran phap, thuong mai |
+| Phu Luc | phong an, buff, ha che | vat lieu, tri thuc, nguoi ve | tran phap, ngoai giao, bao ve |
+| Cong Trinh / Tran Phap | quan tran, Di Chi Truyen Thua, phuc dung | phu luc, van tai, nhan luc | hoang trieu, hoc vien, the gia |
+| Tinh Bao / Mat Tham | thong tin, cai nguoi, false flag | tien bac, phap ly, noi ung | moi nganh khac |
 
 Người chơi co the theo song song nhieu nganh, nhung moi nganh deu co cay ky nang rieng va yeu cau dien tich / thoi gian / nhan luc.
 
-### Vi Du: Dan Dao Trong Biome 2
+### Vi Du: Dan Duoc Trong Biome 2
 
-Dan dao co the tu tuc ve dan duoc, hoi phuc va dot pha, nhung yeu trong tranh dau.
+Dan Duoc co the tu tuc ve dan duoc, hoi phuc va dot pha, nhung yeu trong tranh dau.
 
-- Dan Dao co the dong goi san pham, ban dan, giu nguon song cho the luc.
-- Khi muon noi len tier cao, Dan Dao can phe khac cung cap vat pham phuc dung di chi, nguyen lieu hiem, bao ve luc luong va dich vu chien dau.
-- Dan Dao co the mot minh song duoc, nhung muon tao he sinh thai manh phai ket noi voi Kiem, Tran, Phu, Thuong, Mat Tham va Hoang Trieu.
-- Neu muon khai thac mot thanh tri truyen thua, Dan Dao co the phai thue phe chien dau danh giam, phe thuong mai cung cap huu canh, phe phap ly bao chong phan boi.
+- Dan Duoc co the dong goi san pham, ban dan, giu nguon song cho the luc.
+- Khi muon noi len tier cao, Dan Duoc can phe khac cung cap vat pham phuc dung di chi, nguyen lieu hiem, bao ve luc luong va dich vu chien dau.
+- Dan Duoc co the mot minh song duoc, nhung muon tao he sinh thai manh phai ket noi voi Kiem, Tran, Phu, Thuong, Mat Tham va Hoang Trieu.
+- Neu muon khai thac mot Di Chi Truyen Thua, Dan Duoc co the phai thue phe chien dau danh giam, phe thuong mai cung cap huu canh, phe phap ly bao chong phan boi.
 
 ### Nguon Tai Nguyen Biome 2
 
@@ -109,8 +109,8 @@ Moi nganh co cay ky nang rieng. Phat trien cang cao thi cang manh, nhung cung ca
 
 | Nganh | Cay ky nang | Phu thuoc |
 |---|---|---|
-| Dan Dao | hoi phuc, dot pha, tan duoc, che tao dan | linh thao, bao ve, giao dich |
-| Kiem Dao | don dau, xuyen pha, chem tuong | vo khi, trang bi, hau can |
+| Dan Duoc | hoi phuc, dot pha, tan duoc, che tao dan | linh thao, bao ve, giao dich |
+| Chien Dau | don dau, xuyen pha, chem tuong | vu khi, trang bi, hau can |
 | Tran Phap | thu thanh, khong che khu vuc, van hanh doan the | nhan luc, phu luc, vat lieu |
 | Phu Luc | phong an, debuff, ngoai giao canh bao | vat lieu, ky su, bao ve |
 | Thuong Hoi | van tai, nhu cau thi truong, tai chinh | an ninh, phap ly, san xuat |
@@ -126,7 +126,7 @@ Moi nganh co cay ky nang rieng. Phat trien cang cao thi cang manh, nhung cung ca
 | Di chuyen | duong chinh, duong tat, cong dich chuyen, choke |
 | The luc | can cu nguoi choi, NPC faction, vung anh huong |
 | Tinh bao | fog, dau vet hanh quan, tin don, scout report |
-| Co duyen | event, di tich, boss, lua chon roleplay |
+| Co duyen | event, di chi, boss, lua chon roleplay |
 | Luat biome | phap tac rieng cua vung, buff/debuff, cam che |
 
 ---
@@ -152,7 +152,7 @@ Biome 1 la "man khoi dau" cua mot the luc, nhung duoc dat trong khung tien truye
 Can Cu Suy Tan
    |-- vung san xuat nen
    |-- vung nhan su / cuu dan / cuu de tu
-   |-- vung di tich nho
+   |-- vung di chi nho
    |-- choke bi phong an
    '-- cong sang Biome 2
 ~~~
@@ -161,7 +161,7 @@ Can Cu Suy Tan
 |---|---|---|
 | Can cu suy tan | noi nguoi choi quan tri the luc | thieu nhan luc, kho hong, noi bo chia phe |
 | Vong tai nguyen nen | mo, ruong, linh thao cap thap | chon node nao truoc anh huong tempo |
-| Di tich nho | lore dai nang + co duyen | lay reward nhanh hay giu loi hua voi NPC |
+| Di chi nho | lore dai nang + co duyen | lay reward nhanh hay giu loi hua voi NPC |
 | Vung nguy hiem | guard, quai, phap tac biome | can tuong/quan dung role, khong farm vo nao |
 | Choke phong an | cua ra biome 2 | can danh vong, tai nguyen, hoac quyet dinh hy sinh |
 | Cong chan | dan quai vat can cong | ep player hoc chuan, co the out som neu manh |
@@ -187,7 +187,7 @@ Biome 2 la ban do xa hoi. Tai day map phai bat nguoi choi nhin thay nhau, can nh
 | Cho trung lap | mua ban cong khai/an danh | tin dung, lua dao, cam van |
 | Linh Mach Trung | nguon nang cap quan/tuong | lien minh tam thoi, chien tranh tranh chap |
 | Deo/cau/cong | choke giao thong | thu phi, bao ke, phuc kich, hiep uoc qua duong |
-| Di tich lon | objective nhieu ben | chia loot, phan boi, tranh quyen uu tien |
+| Di chi lon | objective nhieu ben | chia loot, phan boi, tranh quyen uu tien |
 | Vung xam | khong ai so huu ro | noi Tinh Bao/Thuc Luc ngam hoat dong |
 | Dat cu tru NPC | dan, mon do, thuong doi | reputation co gia tri thuc te |
 
