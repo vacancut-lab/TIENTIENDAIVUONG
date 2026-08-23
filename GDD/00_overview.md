@@ -1,196 +1,190 @@
-# Game Overview
+﻿ï»¿# Game Overview
 
 ## Design DNA
 
-Mảnh Vỡ Đại Thiên là game **PC-first roleplay strategy** trong bối cảnh tiên hiệp. Mobile vẫn tồn tại, nhưng chỉ là bản phụ để quản lý nhanh, nhận báo cáo và đặt lệnh nền.
+Manh Vo Dai Thien la mot game PC-first roleplay strategy realtime 3D trong boi canh tien hiep. Day khong phai SLG hay RTS truyen thong, ma la mot the loai moi ket hop dieu quan, ngoai giao, kinh te, lanh tho va roleplay lanh dao the luc.
 
-Trục trải nghiệm chính:
+Trong game, nguoi choi khong chi dieu quan ma con dong vai mot lanh dao the luc dang phuc hoi tu su suy tan. Moi quyet dinh deu co hau qua xa hoi, kinh te va chinh tri.
 
-- Người chơi chọn một vai lãnh đạo: Tông Chủ, Hoàng Đế, Bang Chủ, Gia Chủ, Minh Chủ...
-- Mục tiêu ban đầu là vực dậy một thế lực suy tàn trong một tiểu thiên thế giới.
-- Nơi khởi đầu là **biome 1**: một tiểu thiên thế giới riêng cho từng người chơi, được hình thành từ cơ thể của một đại năng cổ xưa để mở đầu câu chuyện.
-- Sau khi vượt qua biome 1, người chơi tiến vào **biome 2**, nơi các thế lực bắt đầu gặp nhau và roleplay là trọng tâm.
+### Truc trai nghiem chinh
 
-Tham chiếu hệ thống:
+- PC la nen tang trung tam, toan bo chien luoc lon va roleplay nang nam o PC.
+- Map 3D realtime la khong gian chien luoc chinh, co vi tri, lanh tho, hanh lang va diem nghen.
+- Tai nguyen khan hiem, truyen thua dut gay va canh tranh lanh tho la dong co chinh cua xung dot.
+- Lien sever la nhip van hanh trung tam cua the gioi, khong phai season cu.
+- Khong co nap tien, khong co VIP, khong co pay-to-win.
 
-- **Heroes 3**: tướng dẫn quân, khám phá map, resource node, skill/build, army tier.
-- **Jebus Outcast**: nhịp mở vùng, tranh tài nguyên, timing, map tạo drama và tempo.
-- **Call of Dragons**: hành quân, liên minh, chiếm điểm, tranh lãnh thổ trên world map.
+### Tham chieu he thong
 
-Các tham chiếu này không thay thế DNA chính: **roleplay lãnh đạo thế lực**.
+- Heroes 3: tuong dan quan, map exploration, resource node, skill/build, army tier.
+- Jebus Outcast: nhip mo vung, tranh tai nguyen, timing, drama va tempo.
+- Call of Dragons: hanh quan, lien minh, chiem diem, tranh lanh tho tren world map.
 
 ---
 
 ## Core Fantasy
 
-Người chơi không phải một nhân vật đi farm quái. Người chơi là người đứng đầu hoặc người kế thừa một thế lực đang rơi vào suy tàn.
+Nguoi choi khong phai mot nhan vat di farm quai. Nguoi choi la nguoi dung dau hoac nguoi ke thua mot the luc dang suy tan, phai vuc day no trong mot the gioi bi dut gay truyen thua.
 
-Ví dụ vai khởi đầu:
-
-| Vai | Fantasy | Trọng tâm |
+| Vai | Fantasy | Trong tam |
 |---|---|---|
-| Tông Chủ / Chưởng Môn | Khôi phục tông môn đổ nát | đệ tử, truyền thừa, linh mạch, pháp hội |
-| Hoàng Đế / Quốc Chủ | Vực lại hoàng triều suy vi | dân, luật, quân đội, chư hầu |
-| Bang Chủ / Minh Chủ | Dựng lại bang phái/liên minh | nhân mạch, địa bàn, nghĩa khí, đấu đá |
-| Gia Chủ / Tộc Trưởng | Cứu gia tộc khỏi diệt vong | huyết mạch, hôn nhân, tài sản, danh vọng |
-| Thương Chủ / Các Chủ | Tái lập mạng lưới thương hội | tuyến đường, kho, nợ, bảo kê |
+| Tong Chu / Chuong Mon | Khoi phuc tong mon do nat | De tu, truyen thua, linh mach, phap hoi |
+| Hoang De / Quoc Chu | Vuc lai hoang trieu suy vi | Dan, luat, quan doi, chuc hau |
+| Bang Chu / Minh Chu | Dung lai bang phai / lien minh | Nhan mach, dia ban, nghia khi, dau da |
+| Gia Chu / Toc Truong | Cuu gia toc khoi diet vong | Huyet mach, hon nhan, tai san, danh vong |
+| Thuong Chu / Cac Chu | Tai lap mang luoi thuong hoi | Tuyen duong, kho, no, bao ke |
 
-Mỗi vai cần có khác biệt roleplay, quan hệ xã hội, tài nguyên khởi đầu, điểm yếu và con đường vực dậy riêng.
+Moi vai can co khac biet ve roleplay, quan he xa hoi, tai nguyen khoi dau, diem yeu va con duong vuot day rieng.
 
 ---
 
 ## Core Loop
 
 ```text
-Chọn vai lãnh đạo + thế lực suy tàn
+Chon vai lanh dao + the luc suy tan
         ->
-Tỉnh dậy/tiếp quản trong biome 1 của tiểu thiên thế giới
+Tinh day trong biome 1
         ->
-Khôi phục căn cơ: tài nguyên, nhân tài, công trình, quân đội, nội bộ
+Phuc hoi can co, co so, tai nguyen, nhan tai, quan doi
         ->
-Khám phá biome 1: fog, node, di chỉ, quái, cơ duyên, bí mật của đại năng tọa hóa
+Kham pha biome 1, tim duong sang biome 2
         ->
-Vượt ngưỡng biome 1: đủ lực / đủ danh vọng / mở cổng / phá phong ấn
+Vuot boss hoac thu thach, nho hieu dieu quan co ban
         ->
-Tiến vào biome 2
+Tien vao biome 2
         ->
-Roleplay với thế lực/người chơi khác: ngoại giao, hiệp ước, giao thương, thù hằn
+Xay dung lai di tich, mo quyen khai thac, mua quan, lap the luc
         ->
-Tranh lãnh thổ, objective, tài nguyên hiếm, danh tiếng
+Tham gia roleplay, giao thuong, bao ke, phan boi, lien minh
         ->
-Dùng mobile/bế quan để xử lý tài nguyên và lệnh nền khi không ngồi PC
+Tranh lanh tho, objective, tai nguyen hiem, danh tieng
         ->
-Quay lại PC để ra quyết định lớn, tham gia roleplay và chiến tranh
+Dung mobile / be quan de xu ly tai nguyen va lenh nen khi khong ngoi PC
+        ->
+Quay lai PC de ra quyet dinh lon, tham gia roleplay va chien tranh
 ```
 
 ---
 
 ## Biome Progression
 
-### Biome 1 — Tiểu Thiên Thế Giới Riêng
+### Biome 1 - Vung Kiet Que / Legacy Vessel
 
-Biome 1 là tiểu thiên thế giới riêng của từng người chơi, hình thành từ cơ thể một đại năng cổ xưa đã tọa hóa. Nó không chỉ là tutorial, mà là chương mở đầu của câu chuyện và thân phận lãnh đạo.
+Biome 1 la mot vung dat kiet que tai nguyen, dut gay truyen thua va bi cat khoi mach van hanh lon hon cua the gioi. Day khong phai la tutorial thong thuong, ma la trang dau cua hanh trinh song con, tim duong thoat va phuc hoi ky uc the luc.
 
-Mục tiêu của biome 1:
+Muc dich cua Biome 1:
 
-- giới thiệu thân phận lãnh đạo và vấn đề của thế lực
-- cho người chơi khôi phục sản xuất, nhân sự, quân đội, công trình nền
-- tạo lựa chọn roleplay đầu tiên: cứu ai, bỏ ai, giữ lời hứa nào, hy sinh tài nguyên nào
-- mở bí mật về đại năng cổ xưa và cấu trúc tiểu thiên thế giới riêng của người chơi
-- chỉ cung cấp tài nguyên cấp thấp để xây quân tier 1-2, không cho nhảy thẳng lên chiến lực cao
-- có một đàn quái vật chặn cổng đủ mạnh để ép người chơi phải học cách chơi, nhưng vẫn có thể vượt sớm nếu hiểu hệ thống nhanh
-- mục tiêu dài hạn là đẩy người chơi ra đại thế giới để cứu một biome đang cạn tài nguyên
-- có AI Ngón Tay Vàng làm trợ lý, và nó kết nối với Tổng Thiên Nhãn để hỗ trợ các role cần tương tác cao như mật thám, drama, theo dõi biến động xã hội
-- vật liệu nền ở biome 1 gồm gỗ, đá, lương thực và linh thạch cấp thấp
-- boss phụ có thể tồn tại để tạo reward, lore, hoặc đường tắt, nhưng không bắt buộc
-- chuẩn bị người chơi bước vào môi trường xã hội/phức tạp hơn ở biome 2
-- quân tier 1-2 là quân nền giống nhau do truyền thừa đứt gãy; tier 3-7 chỉ mở ở biome 2 thông qua Di Chỉ Truyền Thừa
-- mỗi di chỉ truyền thừa ban đầu là một địa điểm; người chơi có thể chiếm nhiều địa điểm, nhưng không có nghĩa đủ năng lực xây dựng hoặc phục dựng toàn bộ hệ thống của tất cả di chỉ đó
+- tao ap luc sinh ton va buoc nguoi choi phai hoc he thong
+- chi cap nguon luc thap, khong du de phat trien nhanh
+- bat nguoi choi phai tim duong toi Biome 2
+- tao nhan vat, than phan va nghi van truyen thua
+- cho phep phuc hoi dan dan, cong trinh dan dan, va mo lai cac duong di
 
-### Biome 2 — Roleplay Giữa Các Bên
+Khi chua khoi phuc, Biome 1 la noi ngheo tai nguyen, kiet sue, khong the xem nhu kho luu tru tien loi.
 
-Biome 2 là nơi các thế lực bắt đầu va chạm. Đây là vùng game chuyển từ khôi phục nội bộ sang xã hội sống.
+### Biome 1 nhu mot hanh trang di san
 
-Biome 2 phải có:
+Sau khi duoc phuc hoi mot phan, Biome 1 co the dong vai tro nhu mot hanh trang di san cua nhan vat:
 
-- nhiều thế lực/người chơi cùng tồn tại
-- tài nguyên không đủ cho tất cả
-- vùng trung lập, điểm nghẽn, tuyến giao thương, Linh Mạch, di chỉ
-- hàng loạt Di Chỉ Truyền Thừa kiểu Heroes 3, quyết định quyền mua và phục dựng quân tier cao
-- luật ngoại giao và reputation đủ mạnh để lời hứa/phản bội có hậu quả
-- cơ chế để người chơi roleplay thân phận: tông chủ nói khác hoàng đế, bang chủ hành xử khác thương chủ
-- các role ở Biome 2 phải là vai sống động, liên kết chặt với nhau; mỗi ngành là một role quan trọng, có cây kỹ năng riêng và càng phát triển càng mạnh nhưng cũng càng phụ thuộc vào ngành khác
-- có thể nghiên cứu song song nhiều ngành, nhưng sẽ tốn rất nhiều thời gian và chi phí
-- ví dụ Luyện Chế hỗ trợ các ngành cần vũ khí; kỹ sư cần bản vẽ, công nhân và nguyên liệu để thi công; không có ngành nào là phụ hoàn toàn
-- ví dụ Đan Dược có thể tự túc đan dược, nhưng yếu tranh đấu; vẫn phải nhờ phe khác hỗ trợ nhiệm vụ truyền thừa, mua vật phẩm phục dựng di chỉ, hoặc đánh thuê khi cần
-- người chơi có thể sống một mình nếu muốn, nhưng để tạo được hệ sinh thái mạnh thì vẫn phải phụ thuộc người khác theo kiểu trao đổi hai chiều
-- tài nguyên không tự sinh ra là chính; phần lớn tăng trưởng đến từ tranh đoạt, chiếm giữ, giao thương, bảo kê và hợp tác
-- nguồn tài nguyên càng hiếm càng dễ kéo theo xung đột xã hội, drama, phản bội và hiệp ước
+- mang tai nguyen, quan doi, trang bi va kien thuc sang server khac
+- co gioi han de khong cho oldbie pha sever moi
+- co the dung de chuyen qua lai giua cac gioi vuc
 
-### Khung Ngành Nghề Biome 2
+### Chuyen sang Biome 2
 
-Biome 2 có thể chia thành 8 nhóm ngành chính. Mỗi nhóm là một role sống động, có cây kỹ năng riêng, có ngành phụ trợ và có vị thế trong hệ sinh thái.
+Nguoi choi phai vuot qua boss hoac chuoi thu thach de mo duong sang Biome 2. Dieu kien nay khong chi la suc manh, ma con phai hieu dieu quan co ban va biet van hanh the luc.
 
-| Nhóm | Vai trò chính | Phụ thuộc chính | Ví dụ nghề |
-|---|---|---|---|
-| Chiến Đấu | đánh nhau, hộ tống, chiếm điểm | vũ khí, hậu cần, y tế | Kiếm Tu, Thể Tu |
-| Công Trình | xây thành, thủ thành, phục dựng di chỉ | vật liệu, nhân lực, phù lục | Trận Pháp, Kỹ Sư |
-| Luyện Chế | làm trang bị, bẫy, công cụ | quặng, linh thảo, bản vẽ | Luyện Khí, Phù Lục |
-| Đan Dược | hồi phục, đột phá, nuôi quân | linh thảo, bảo vệ, thương mại | Đan Sư, Dược Sư |
-| Thương Mại | vận tải, mua bán, cung ứng | an ninh, pháp lý, sản xuất | Thương Hội, Hậu Cần |
-| Tình Báo | scout, ngầm, phá hoại, drama | tiền, luật, quan hệ, ngụy trang | Mật Thám, Ám Tử |
-| Ngoại Giao | hiệp ước, giải quyết tranh chấp | uy tín, pháp lý, quà tặng | Pháp Gia, Ngoại Giao Quan |
-| Hỗ Trợ Đặc Thù | nuôi hệ sinh thái, vùng đặc biệt | đất, dân, thủ lĩnh, bảo hộ | Ngự Thú, Linh Mộc |
+### Biome 2 - Xa Hoi Song
 
-### Tinh Than RP Cua Nghe Nghiep
+Biome 2 la xa hoi song that su, noi cac the luc cung nhau va bat dau tranh lanh tho, tranh tai nguyen va tranh quyen khai thac.
 
-- Mỗi ngành là một vai có ích thật sự, không phải nghề phụ.
-- Mỗi ngành càng mạnh càng phụ thuộc hệ sinh thái xung quanh.
-- Người chơi có thể sống một mình, nhưng muốn mạnh thì phải bước vào mạng trao đổi giữa các ngành.
-- Càng đi sâu, càng bị khóa bởi tài nguyên, quan hệ, hậu cần và kỹ năng nghề khác.
+Biome 2 phai co:
 
-### Vi Du Role
+- nhieu the luc / nguoi choi cung ton tai
+- tai nguyen khong du cho tat ca
+- di tich can duoc xay lai de mo quyen mua quan, xay dung the luc
+- di tich, cua ngo, chuoi giao thuong va diem neu quan trong tren map
+- luat ngoai giao va reputation du manh de loi hua / phan boi co hau qua
 
-- Đan Dược có thể tự túc đan dược và nuôi sống thế lực nhỏ.
-- Nhưng nếu yếu tranh đấu, muốn leo tier cao thì phải thuê phe chiến đấu làm nhiệm vụ truyền thừa.
-- Muốn mua vật phẩm phục dựng di chỉ, Đan Dược cần thương hội, pháp lý hoặc thế lực bảo kê.
-- Luyện Chế cần quặng, bản vẽ, thợ và người vận chuyển.
-- Trận pháp cần vật liệu, nhân lực, phù lục và thời gian.
-- Mật thám sống bằng thông tin khan hiếm, nên phải bám vào hậu cần, pháp lý và drama.
+Neu quan ly kem, Biome 2 se nhu bi rua tien lien tuc: phat lam phat kinh te, oldbie doi hap nho, new player khong co duong song.
 
 ---
 
-## PC Và Mobile
+## Inter-Server Legacy
 
-| Nền tảng | Vai trò |
+Biome 1 khong con la map khoi dau don thuong. No la he thong di san ca nhan giup nguoi choi mang theo gia tri khi di qua server khac de choi cung ban be ma khong mat het moi thu.
+
+### Di San
+
+Di san duoc tinh bang tong ba thanh phan:
+
+| Thanh phan | Noi dung |
 |---|---|
-| PC | Trải nghiệm chính: map, roleplay, ngoại giao, combat, quản trị sâu. |
-| Mobile | Trợ lý phụ: báo cáo, tài nguyên, lệnh điều kiện, phản hồi sự kiện nhỏ. |
+| Tai san | Tai nguyen, trang bi, cong trinh, quyen khai thac |
+| Tri thuc | Bi kip, ban ve, nghien cuu, unlock nen |
+| Quan luc | So luong va chat luong quan co the mang theo |
 
-Mobile không được buộc game thành idle game. Nếu một hệ thống cần chiều sâu roleplay hoặc quyết định chiến lược lớn, thiết kế ưu tiên PC.
+### Nguyen tac chuyen server
 
----
+- Nguoi choi co the mang mot phan di san sang server khac.
+- Moi server co tran on dinh rieng.
+- Server moi cang non thi cang siet gioi han nhap cu.
+- Khong co viec mang full power sang va xoa so server moi.
 
-## Bế Quan / Resource Operations
+### Quan luc chuyen gioi
 
-Bế Quan là trạng thái người chơi không trực tiếp điều hành từng thao tác nhỏ. Nó giống việc lão tổ bế quan: thế lực vẫn vận hành theo lệnh đã đặt, nhưng không tự sinh ra chiến thắng.
-
-Được phép tự động hóa:
-
-| Nhóm | Ví dụ |
-|---|---|
-| Sản xuất | thu hoạch tài nguyên, vận hành mỏ, luyện đan/luyện khí nền |
-| Hậu cần | chuyển kho, nuôi quân, sửa công trình |
-| Lệnh điều kiện | mua khi thiếu, rút khi nguy hiểm, báo cáo khi bị scout |
-| Báo cáo | tóm tắt biến động biome/map/social khi người chơi quay lại |
-
-Không được biến thành:
-
-```text
-offline lâu -> tự mạnh -> thắng người chơi đang roleplay/đánh map
-```
+- Quan tier cao co the mang sang, nhung bi gioi han so luong va hieu luc.
+- Server moi chi nen cho quan tier cao ton tai o vai tro han che.
+- Neu server moi chi mo tier 4-5 de danh quai, thi tier 7 khong duoc dung de quet map hang loat.
+- Nguoi choi co the di nhanh hon, nhung van phai di dung tray tu luyen: luyen the -> truc co -> kim dan -> ...
 
 ---
 
-## Hệ Thống Thời Gian
+## Inter-Server Pool
 
-**1 ngày thực = 10 năm game**
+He thong lien sever duoc ghep theo kieu pool, giong tu duy cua TFT.
 
-| Giai Đoạn | Ngày Thực | Năm Game | Nội Dung |
-|---|---|---|---|
-| Early Game | 1-14 | 0-140 | Biome 1, vực dậy căn cơ thế lực |
-| Season War | 15-30 | 140-300 | Biome 2, bắt đầu roleplay/liên minh/tranh chấp |
-| Gộp Cụm | 31-45 | 300-450 | Mở vùng lớn hơn, thế lực cũ gặp trật tự mới |
-| Endgame | 46-60 | 450-600 | Quyết chiến danh vọng, lãnh thổ, di sản season |
+### Server rating pool
 
-Thời lượng season vẫn có thể giữ 60 ngày, nhưng cần kiểm tra lại sau khi Biome 1 và Biome 2 được thiết kế cụ thể.
+Moi server co diem pool duoc tinh tu:
+
+- suc manh tong the
+- tuoi server
+- so nguoi choi hoat dong
+- muc phat trien kinh te
+- do on dinh chinh tri
+
+Server trong cung pool moi duoc ghep nhau de dau lien sever.
+
+### Tran lien sever
+
+- Moi tran lien sever keo dai 3-5 ngay.
+- Trong tran, cac server tranh phan thuong, lanh tho, uy danh va tai nguyen sieu hiem.
+- Cac server gap nhau theo seed / bracket / rank pool, khong gap ngau nhien vo to chuc.
+
+### Muc dich cua pool
+
+- Cong bang hon giua server manh va yeu
+- Server non van co cua song
+- Server gia khong farm qua de
+- Tao nhip thi dau va chuyen dong lon cho toan bo he thong
 
 ---
 
-## Không Có
+## Khong Co
 
 - Mobile-first idle game
-- AFK là core thắng thua
-- Người chơi chỉ là một hero đi farm quái
-- Combat tách rời roleplay/map kiểu bấm Start rồi nhận thưởng
-- VIP 2, VIP 3, bán stat, bán unit exclusive
+- AFK la core thang thua
+- Nguoi choi chi la mot hero di farm quai
+- Combat tach roi roleplay / map kieu bam Start roi nhan thuong
+- VIP bac thang, ban stat, ban unit doc quyen
+- Season kieu cu
+- Nap tien
+
+---
+
+## Vi Tri Thiet Ke
+
+Game nay phai duoc nhin nhu mot xa hoi tien hiep song tren map, noi moi the luc co the ton tai mot minh o muc thap, nhung muon dot pha thi phai buoc vao quan he: mua ban, thue chien, bao ke, phan boi, lien minh, phuc dung di tich va tranh doat tai nguyen.
+
+
