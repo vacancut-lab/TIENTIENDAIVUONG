@@ -1,58 +1,48 @@
-# Monetization — Anti-P2W
+# Monetization
 
-## Triết Lý
+## Quyet Dinh Hien Tai
 
-```
-Free player:     0 đồng/ngày
-Subscriber:     10 đồng/ngày (cộng dồn theo tháng)
-──────────────────────────────
-Không có VIP 2, VIP 3
-Không có whale trap
-Không bán stat
-Không bán unit exclusive
-```
+Game khong co nap tien.
 
----
+Khong co:
 
-## Dùng 10 Đồng Vào Đâu
+- goi thang
+- VIP
+- gacha tra tien
+- ban stat
+- ban unit doc quyen
+- tang toc xay dung bang tien
+- slot doi hinh mua bang tien
+- loi the chien dau tra tien
 
-| Được Phép | Không Được Phép |
-|---|---|
-| ✅ Mua lượt gacha thêm (không exclusive unit) | ❌ Bán stat |
-| ✅ Tăng tốc xây dựng / hành quân | ❌ Bán unit exclusive |
-| ✅ Slot đội hình thêm | ❌ Bán lợi thế chiến đấu trực tiếp |
-| ✅ Cosmetic: skin công trình, cờ hiệu, hiệu ứng | ❌ Pay-to-win bất kỳ hình thức |
+Ly do: Manh Vo Dai Thien la game roleplay chien luoc, trong tam nam o xa hoi song, dieu quan realtime, di san nhan vat, chinh tri, kinh te va tranh chap lanh tho. Bat ky co che tra tien nao tac dong toi power, toc do, quan luc hoac tai nguyen deu lam hong niem tin xa hoi.
 
 ---
 
-## Cân Bằng Không Phụ Thuộc Tiền
+## Nguyen Tac Khong Lech Huong
 
-### Soft Cap Sức Mạnh Cá Nhân
-- Nạp tiền rút thêm → không tăng stat, chỉ tăng roster đa dạng
-- Chiến thắng phụ thuộc **đội hình counter** hơn là raw power
-
-### Alliance Làm Bộ Đệm
-- Solo whale không thể 1v50
-- Công thành cần số lượng người → cộng đồng > ví tiền
-
-### Decay System
-- Lãnh thổ không active → tự suy giảm
-- Whale bỏ game → đế chế tan rã tự nhiên
-- Tránh dead server bị 1-2 người chiếm hết
+- Khong de tien that can thiep vao tran suc manh server.
+- Khong de tien that can thiep vao tranh chap role dac thu.
+- Khong de tien that mua Di Chi, node, quan tier cao, tai nguyen dac thu.
+- Khong de tien that tang toc campaign transfer.
+- Khong de tien that thay the cong suc roleplay, giao thuong, chien tranh hoac ngoai giao.
 
 ---
 
-## Gacha System
+## Huong Tuong Lai Neu Can Duy Tri Server
 
-- Pool nhân vật: Môn đồ thiên tài / Tướng lĩnh / Thần thú / Pháp bảo
-- Rarity: Phàm → Linh → Huyền → Thiên → Thánh
-- **Pity system** + rate-up banner theo event
-- Không có unit exclusive trả tiền
+Neu sau nay can co nguon van hanh, chi xem xet cac huong khong tac dong gameplay:
+
+- ban soundtrack / artbook
+- ung ho tu nguyen ngoai game
+- ban cosmetic ngoai chien dau neu khong lam loi nhan dien tren map
+- ban private server / tool GM cho cong dong neu game co ban mod
+
+Bat ky huong nao cung phai duoc tach khoi power va economy.
 
 ---
 
-## ❓ Câu Hỏi Mở
+## Cau Hoi Mo
 
-- [ ] 10 đồng/ngày = bao nhiêu lượt gacha thêm?
-- [ ] Cosmetic có ảnh hưởng nhận diện trên map không (ví dụ cờ hiệu đặc biệt)?
-- [ ] Slot đội hình thêm — tối đa bao nhiêu slot có thể mua?
+- Co can xoa hoan toan file monetization trong tuong lai, hay giu file nay nhu mot cam ket thiet ke?
+- Neu co cosmetic, cosmetic co duoc hien tren map chien tranh khong?

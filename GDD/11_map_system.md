@@ -2,209 +2,129 @@
 
 ## Vai Tro
 
-Map la san khau chinh cua game. Roleplay, tai nguyen, chien tranh, ngoai giao va co duyen deu phai co vi tri tren map.
+Map la san khau chinh cua game. Roleplay, tai nguyen, chien tranh, ngoai giao, di tich, tuyen van tai va co duyen deu phai co vi tri tren map.
 
-Tham chieu cam giac:
-
-- Heroes 3: exploration, fog, resource piles/nodes, hero pathing, guards, objectives.
-- Jebus Outcast: tempo mo map, tranh mo, duong thong vung, reward lon di kem rui ro.
-- Call of Dragons: hanh quan thoi gian thuc, alliance, rally, chiem diem, tranh lanh tho.
+Game uu tien PC truoc, voi map 3D realtime lay cam giac dieu quan va tranh lanh tho tu Call of Dragons, nhung giu chieu sau exploration / node / guard / di tich cua Heroes 3 va tempo mo vung cua Jebus Outcast.
 
 ---
 
 ## Nguyen Tac Map-First
 
-| Nguyen Tac | Y Nghia |
+| Nguyen tac | Y nghia |
 |---|---|
-| Moi thu quan trong co vi tri | Tai nguyen, di chi, NPC, hiep uoc, chien tranh deu gan voi diem/vung. |
+| Moi thu quan trong co vi tri | Tai nguyen, di chi, NPC, hiep uoc, chien tranh deu gan voi diem / vung. |
 | Duong di la quyet dinh | Di dau truoc, mo duong nao, bo node nao phai tao he qua. |
 | Fog tao chinh tri | Khong biet het map -> can tinh bao, giao dich thong tin, lua dao. |
-| Choke tao drama | Diem nghen buoc ngoai giao, phuc kich, bao ke, thu phi. |
-| Resource guard tao tempo | Node manh can quan/tuong du luc hoac hop tac de mo. |
+| Choke tao drama | Diem nghen tao ngoai giao, phuc kich, bao ke, thu phi. |
+| Resource guard tao tempo | Node manh can quan / tuong du luc hoac hop tac de mo. |
 | Lanh tho la cau chuyen | Mat mo, giu cong, cuu vien, phan boi phai duoc nho trong lich su server. |
 
 ---
 
-## Cau Truc Map Theo Biome
+## Cau Truc Server
 
-```text
-Tieu Thien The Gioi
-|-- Biome 1: vung can co / khoi dau
-|-- Biome 2: vung roleplay xa hoi
-|-- Biome 3: vung chien tranh lon / phap tac dac biet
-`-- Core/Endgame: di san dai nang toa hoa
-```
+Moi server la mot vi dien rieng, khong phai mot server nguyen to tach biet nhu ban cu.
 
-### Biome 1
+Moi server co 5 vung dat chinh. Bo cuc 5 vung dat co the khac nhau giua cac server de tao ban sac, nhung van phai dam bao moi server co du:
 
-- La tieu thien the gioi rieng cua tung nguoi choi.
-- Duoc hinh thanh tu co the mot dai nang co xua, tao cam giac biem kich va di san cuoi cung.
-- Chi co tai nguyen cap thap de xay dung quan doi tier 1-2.
-- Tap trung khoi phuc the luc ban dau, khong co tham vong mo vang tuan dau.
-- Co mot dan quai vat chan cong du manh de lam kho player, giong quái chan cong trong Jebus Outcast.
-- Player nao nam ro he thong co the out som; biome khong giu nguoi choi lau hon can thiet.
-- Toan bo biome 1 chi chua tai nguyen cap 1 phuc vu xay dung va lam quen game.
-- Bai toan thiet ke la ep nguoi choi som ro biome nay de sang dai the gioi, noi co the cuu biome dang can tai nguyen.
-- AI Ngon Tay Vang co the phoi hop voi Tong Thien Nhan de tao bao cao, goi y, canh bao drama va ho tro cac role co tinh tuong tac cao.
-- Tai nguyen cap 1 gom go, da, luong thuc va linh thach cap thap.
-- Resource node nen, guard vua phai.
-- Duong mo co tinh lua chon nhung khong qua trung phat.
-- Cam che/vach gioi han tao muc tieu mo biome 2.
+- vung khoi dau / an toan tuong doi
+- vung tai nguyen canh tranh
+- vung di tich truyen thua
+- vung giao thuong / trung lap
+- vung nguy hiem / chien tranh / boss
 
-### Biome 2
+5 vung dat khong can co ten co dinh ngay tu dau. Chung la khung bo cuc de tao map va dieu tiet drama.
 
-- Shared map nhieu nguoi choi/the luc.
-- Nhieu resource node canh tranh.
-- Choke point, vung trung lap, tuyen giao thuong.
-- Diem cong cong de ky hiep uoc, giao dich, phuc kich, chiem giu.
-- Di chi truyen thua la cac dia diem co the chiem; chiem nhieu dia diem khong co nghia la du nang luc phuc dung toan bo.
-- Moi di chi la mot node co vai tro rieng, co the keo theo chuoi phu tro va xung dot lien hoan.
-- Di chi nao cung co the mat quyen mua/ho tro neu bi cuop, tao drama giong Heroes 3.
-- Tai nguyen Biome 2 khong chi tu sinh. Chung den tu mo, di chi, thuong doi, bao ke, cuop boc, tranh chap va hop tac.
-- Resource cung cap cho moi nganh deu co hai nguon: tu sinh va tranh doat.
-- Tu day roleplay/social tro thanh he thong chinh.
+---
 
-### Nganh Nghe Song Trong Biome 2
+## Biome 1 - Vung Kiet Que / Legacy Vessel
 
-Biome 2 khong chay theo class co dinh. Moi nganh la mot vai song, co quan he mau thit voi cac nganh khac va co vi tri tren map.
+Biome 1 la vung rieng cua nguoi choi, dong thoi la hanh trang di san ve sau.
 
-| Nhom nganh | Chuc nang | Phu thuoc | Co the ho tro |
-|---|---|---|---|
-| Thuong Mai / Hau Can | tai chinh, van tai, kho, tin dung | bao ve, san xuat, phap ly | tat ca cac nganh |
-| Luyen Che | vu khi, phap bao, trang bi, vat pham phuc dung | quang, ban ve, cong nhan, van tai | chien dau, tran phap, thuong mai |
-| Phu Luc | phong an, buff, ha che | vat lieu, tri thuc, nguoi ve | tran phap, ngoai giao, bao ve |
-| Cong Trinh / Tran Phap | quan tran, Di Chi Truyen Thua, phuc dung | phu luc, van tai, nhan luc | hoang trieu, hoc vien, the gia |
-| Tinh Bao / Mat Tham | thong tin, cai nguoi, false flag | tien bac, phap ly, noi ung | moi nganh khac |
+Luc dau, Biome 1 la noi:
 
-Người chơi co the theo song song nhieu nganh, nhung moi nganh deu co cay ky nang rieng va yeu cau dien tich / thoi gian / nhan luc.
+- kiet que tai nguyen
+- dut gay truyen thua
+- chi co tai nguyen cap thap
+- chi co quan tier 1-2
+- co can cu suy tan can khoi phuc
+- co boss / thu thach chan duong sang Biome 2
 
-### Vi Du: Dan Duoc Trong Biome 2
+Muc tieu cua Biome 1 la buoc nguoi choi hoc dieu quan co ban va tim duong sang Biome 2, khong phai giu nguoi choi trong tutorial dai.
 
-Dan Duoc co the tu tuc ve dan duoc, hoi phuc va dot pha, nhung yeu trong tranh dau.
+### Sau khi khoi phuc
 
-- Dan Duoc co the dong goi san pham, ban dan, giu nguon song cho the luc.
-- Khi muon noi len tier cao, Dan Duoc can phe khac cung cap vat pham phuc dung di chi, nguyen lieu hiem, bao ve luc luong va dich vu chien dau.
-- Dan Duoc co the mot minh song duoc, nhung muon tao he sinh thai manh phai ket noi voi Kiem, Tran, Phu, Thuong, Mat Tham va Hoang Trieu.
-- Neu muon khai thac mot Di Chi Truyen Thua, Dan Duoc co the phai thue phe chien dau danh giam, phe thuong mai cung cap huu canh, phe phap ly bao chong phan boi.
+Sau khi duoc khoi phuc mot phan, Biome 1 tro thanh Legacy Vessel:
 
-### Nguon Tai Nguyen Biome 2
+- giu mot phan tai nguyen
+- giu mot phan quan doi
+- giu trang bi, tri thuc, truyen thua
+- cho phep campaign transfer sang server khac trong gioi han
+- lam cau noi giua cac gioi vuc neu co dieu kien
 
-| Nguon | Cach co | Drama |
-|---|---|---|
-| Tu sinh | mo, ruong, linh mach, event | on dinh, nhung khong du cho cuoc dua lon |
-| Tranh doat | cuop mo, chiem di chi, chan duong | nhiet, xung dot, can lien minh |
-| Thuong mai | mua ban, hop dong, bao ve | tao giao dich va loi ich qua lai |
-| Di chi | phuc dung, mo khoa tier cao | tranh quyen, tranh co so, tranh nhan su |
-| Quan he | vuot qua ngoai giao, danh tieng | tao le thuoc va chup mu nao |
+Biome 1 khong duoc dung de mang full power pha server moi.
 
-### Dau Ra Cua Tinh Trang Thieu Thon
+---
 
-- Neu chi tu sinh, game se thanh idle va mat drama.
-- Neu chi tranh doat, game se thanh chaos va khong ben vung.
-- Nen phai co ca hai: noi song thap, tranh doat cao, va thuong mai de boi tron xung dot.
+## Biome 2 - Xa Hoi Song
 
-### Cay Ky Nang Nganh Nghiep
+Biome 2 la map xa hoi chinh cua server. Tai day nguoi choi gap nhau, can nhau, so nhau va tranh chap voi nhau.
 
-Moi nganh co cay ky nang rieng. Phat trien cang cao thi cang manh, nhung cung cang phu thuoc vao mot mang luoi ho tro xung quanh.
+Biome 2 phai co:
 
-| Nganh | Cay ky nang | Phu thuoc |
-|---|---|---|
-| Dan Duoc | hoi phuc, dot pha, tan duoc, che tao dan | linh thao, bao ve, giao dich |
-| Chien Dau | don dau, xuyen pha, chem tuong | vu khi, trang bi, hau can |
-| Tran Phap | thu thanh, khong che khu vuc, van hanh doan the | nhan luc, phu luc, vat lieu |
-| Phu Luc | phong an, debuff, ngoai giao canh bao | vat lieu, ky su, bao ve |
-| Thuong Hoi | van tai, nhu cau thi truong, tai chinh | an ninh, phap ly, san xuat |
+- nhieu the luc cung ton tai
+- tai nguyen khong du cho tat ca
+- di tich can xay lai de mo quyen mua quan va xay the luc
+- choke point, cho trung lap, tuyen giao thuong, Linh Mach, vung xam
+- node quan dac biet va Di Chi Truyen Thua
+- dia hinh tao loi the cho realtime combat
+
+Neu map khong ep nguoi choi can nhau, game se thanh solo farm. Neu map chi ep tranh doat, game se thanh chaos. Biome 2 can ca 3 lop: tu sinh toi thieu, giao thuong de phat trien, tranh doat de dot pha.
+
+---
+
+## Di Tich Va Node Quan Dac Biet
+
+Map phai chua ca Di Chi Truyen Thua va node quan dac biet.
+
+| Loai | Vai tro |
+|---|---|
+| Di Chi Truyen Thua | mo va duy tri quyen dao tao / mua quan tier cao |
+| Node quan dac biet | tao dong quan la, so luong han che, giong cam giac Heroes 3 |
+| Linh Mach | buff vung, tai nguyen, tranh chap dai han |
+| Cho trung lap | giao dich, hop dong, tin don, lua dao |
+| Choke | thu phi, bao ke, phuc kich, phong toa |
+
+Node quan dac biet khong thay the Di Chi Truyen Thua. No la co hoi chien luoc tren map, co the bi tranh chap, phong toa hoac mua ban quyen khai thac.
 
 ---
 
 ## Layer Map
 
-| Layer | Chuc Nang |
+| Layer | Chuc nang |
 |---|---|
-| Dia hinh | rung, nui, song, hoang mac, bang nguyen, loi vuc... |
+| Dia hinh | nui, song, rung, hoang mac, bang nguyen, loi vuc |
 | Tai nguyen | mo, linh thao, linh mach, kho co, phe tich |
 | Di chuyen | duong chinh, duong tat, cong dich chuyen, choke |
 | The luc | can cu nguoi choi, NPC faction, vung anh huong |
 | Tinh bao | fog, dau vet hanh quan, tin don, scout report |
 | Co duyen | event, di chi, boss, lua chon roleplay |
-| Luat biome | phap tac rieng cua vung, buff/debuff, cam che |
+| Luat vung | buff / debuff, phap tac rieng, cam che |
 
 ---
 
-## Tile / Hex / Node
+## Hien Thi Va Dieu Khien
 
-Chua chot hien thi cuoi cung la hex hay node graph. Dinh huong tam thoi:
+Game dung map 3D realtime tren PC.
 
-- **De xuat mac dinh:** node graph tren nen biome ve tay/procedural, co duong noi ro nhu Jebus template.
-- PC view uu tien doc chien thuat: vung, duong, node, anh huong lanh tho.
-- Mobile view uu tien thao tac nhanh: danh sach node, bao cao, lenh di chuyen don gian.
-- Hex/square chi dung lam lop tinh toan an neu can do khoang cach, khong bat buoc hien day dac.
+Nguyen tac hien thi:
 
-Quyet dinh can chot sau khi prototype map.
+- uu tien doc chien thuat: vung, duong, node, vung anh huong
+- co the co lop tinh toan an ben duoi, nhung khong can hien hex / square day dac
+- nguoi choi dieu quan bang duong hanh quan, lenh giu diem, lenh ho tong, lenh phuc kich, lenh rut
+- mobile neu co chi dung de xem bao cao, dat lenh nen va quan ly nho
 
----
-
-## Biome 1 Layout De Xuat
-
-Biome 1 la "man khoi dau" cua mot the luc, nhung duoc dat trong khung tien truyen rieng cua tung nguoi choi. Map can tao cam giac co do cua dai nang toa hoa dang mo lai tung lop.
-
-~~~text
-Can Cu Suy Tan
-   |-- vung san xuat nen
-   |-- vung nhan su / cuu dan / cuu de tu
-   |-- vung di chi nho
-   |-- choke bi phong an
-   '-- cong sang Biome 2
-~~~
-
-| Vung | Vai Tro | Drama Can Tao |
-|---|---|---|
-| Can cu suy tan | noi nguoi choi quan tri the luc | thieu nhan luc, kho hong, noi bo chia phe |
-| Vong tai nguyen nen | mo, ruong, linh thao cap thap | chon node nao truoc anh huong tempo |
-| Di chi nho | lore dai nang + co duyen | lay reward nhanh hay giu loi hua voi NPC |
-| Vung nguy hiem | guard, quai, phap tac biome | can tuong/quan dung role, khong farm vo nao |
-| Choke phong an | cua ra biome 2 | can danh vong, tai nguyen, hoac quyet dinh hy sinh |
-| Cong chan | dan quai vat can cong | ep player hoc chuan, co the out som neu manh |
-
-### Thi Luyen Cong
-
-- Cong ra biome la mot thi luyen cua dai nang, nhung bi ngu trang thanh mot dan quai vat can cong.
-- Moi cong/co thong co mot boss rieng va mot cot truyen rieng.
-- Danh bai boss la co the di ngay, khong can giu vung hay lam them chuoi phong an.
-- Gia tri cua cong la day nhanh nguoi choi ra dai the gioi, khong phai giu ho trong biome 1.
-- Boss phu co the ton tai de cho reward, lore, hoac duong tat, nhung khong bat buoc.
-
-Biome 1 co the rieng theo nguoi choi hoac theo cum nho, nhung phai bao dam nguoi choi duoc xay identity truoc khi bi cuon vao chinh tri biome 2.
-
----
-
-## Biome 2 Layout De Xuat
-
-Biome 2 la ban do xa hoi. Tai day map phai bat nguoi choi nhin thay nhau, can nhau va so nhau.
-
-| Vung/Node | Chuc Nang | He Qua Roleplay |
-|---|---|---|
-| Cho trung lap | mua ban cong khai/an danh | tin dung, lua dao, cam van |
-| Linh Mach Trung | nguon nang cap quan/tuong | lien minh tam thoi, chien tranh tranh chap |
-| Deo/cau/cong | choke giao thong | thu phi, bao ke, phuc kich, hiep uoc qua duong |
-| Di chi lon | objective nhieu ben | chia loot, phan boi, tranh quyen uu tien |
-| Vung xam | khong ai so huu ro | noi Tinh Bao/Thuc Luc ngam hoat dong |
-| Dat cu tru NPC | dan, mon do, thuong doi | reputation co gia tri thuc te |
-
-Map Biome 2 khong nen thiet ke de tat ca cung du tai nguyen. Thieu hut co chu y la dong co cho giao thuong, ngoai giao, cuop boc va lien minh.
-
----
-
-## Resource Node
-
-| Loai Node | Vai Tro | Rui Ro |
-|---|---|---|
-| Mo thuong | tai nguyen nen | bi cuop/thu phi |
-| Linh Mach Ha | nang can co biome 1 | guard/PvE |
-| Linh Mach Trung | tranh chap biome 2 | PvP/ngoai giao |
-| Phe tich | lore + co duyen | lua chon roleplay, boss |
-| Cho trung lap | giao dich | lua dao, phuc kich, thue |
-| Cong/cam che | mo biome moi | can tai nguyen, hiep luc hoac nhiem vu |
+Khong uu tien hex / square lam ngon ngu hien thi chinh.
 
 ---
 
@@ -214,31 +134,66 @@ Hanh quan can lay cam giac Call of Dragons nhung khong bien thanh click war mobi
 
 Nguyen tac:
 
-- di chuyen co thoi gian,
-- scout co gia tri,
-- duong tat di kem rui ro,
-- doi quan xa nha can hau can,
-- co the bi phuc kich/chan duong,
-- rally/cuu vien tao drama xa hoi.
+- di chuyen co thoi gian
+- scout co gia tri
+- duong tat di kem rui ro
+- doi quan xa nha can hau can
+- co the bi phuc kich / chan duong
+- rally / cuu vien tao drama xa hoi
 
-### Lenh Hanh Quan
-
-| Lenh | Dung Khi Nao | Rui Ro |
+| Lenh | Dung khi nao | Rui ro |
 |---|---|---|
 | Scout | mo fog, tim dau vet | bi bat scout, lo y do |
-| March | di chuyen quan/tai nguyen | bi chan duong, ton hau can |
-| Escort | ho tong thuong doi/NPC | cham hon, ton phi |
-| Ambush | phuc kich tai choke/vung xam | that bai thi lo danh tinh |
+| March | di chuyen quan / tai nguyen | bi chan duong, ton hau can |
+| Escort | ho tong thuong doi / NPC | cham hon, ton phi |
+| Ambush | phuc kich tai choke / vung xam | that bai thi lo danh tinh |
 | Rally | tap hop lien minh danh objective | can thoi gian bao truoc, de bi tinh bao phat hien |
 | Retreat Condition | lenh nen khi vang mat | chi giam thiet hai, khong tu tao chien thang |
 
 ---
 
+## Fog, Tinh Bao Va Dau Vet
+
+Fog of war la mot co che xa hoi, khong chi la hieu ung nhin map.
+
+- nguoi choi khong biet het vi tri dich
+- hanh quan de lai dau vet
+- scout report co do tin cay
+- tin gia co the duoc cai vao he thong thong tin
+- Tong Thien Nhan ghi nhan bien dong nhung khong toan tri
+
+Thong tin co the mua ban, danh cap, lam gia hoac dung de false flag.
+
+---
+
+## Inter-Server Map Pool
+
+Lien server khong ghep ngau nhien. Server duoc dua vao pool theo:
+
+- suc manh tong the
+- tuoi server
+- so nguoi choi hoat dong
+- muc phat trien kinh te
+- do on dinh chinh tri
+
+Trong dau lien server 3-5 ngay, cac server cung pool tranh thuong, lanh tho, uy danh va tai nguyen sieu hiem.
+
+Map lien server co the la:
+
+- chien truong trung lap
+- vung di tich mo tam thoi
+- bien gioi giua cac vi dien
+- hanh lang gioi vuc
+
+Lien server khong thay the Biome 2. No la lop xung dot dinh ky giua cac vi dien.
+
+---
+
 ## Cau Hoi Mo
 
-- [ ] Map dung hex, square, hay node graph?
-- [ ] Biome 1 shared hay rieng?
-- [ ] Fog of war luu theo nguoi choi, lien minh, hay the luc?
-- [ ] Resource node co can vinh vien, hoi theo chu ky, hay doi trang thai?
-- [ ] Co cho nguoi choi xay duong/cong de thay doi map khong?
-- [ ] Hanh quan realtime hay theo tick?
+- 5 vung dat server co can bo ten chuan khong?
+- Tran suc manh server khi campaign transfer tinh theo cong thuc nao?
+- Fog of war luu theo nguoi choi, lien minh hay the luc?
+- Node tai nguyen hoi theo chu ky, doi trang thai, hay can phuc dung?
+- Nguoi choi co duoc xay duong / cau / cong de thay doi map khong?
+- Map lien server nen la chien truong rieng hay mo truc tiep tren bien gioi server?
