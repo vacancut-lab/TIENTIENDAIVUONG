@@ -1,88 +1,141 @@
-# Hệ Thống Tài Nguyên
+# He Thong Tai Nguyen
 
-> Tham khảo cấu trúc **Heroes 3** (2 tầng: tiền vạn năng + tài nguyên hiếm), nhưng tiền tệ có **ma sát** (3 mệnh giá, đổi ngược lossy, tỷ giá thả nổi) — sâu hơn Gold của Heroes 3.
+## Triet Ly
+
+He thong tai nguyen phai phuc vu cho mot xa hoi tien hiep song tren map, khong phai mot economy tu sinh vo han.
+
+Tai nguyen la co so de xay dung lai di tich, nuoi quan, mo quyen khai thac, tao giao thuong va sinh ra xung dot.
+
+Muc tieu cua he thong nay la tao khan hiem du de sinh drama, nhung khong de economy sap do hoac bi rua tien lien tuc.
 
 ---
 
-## Cấu Trúc 2 Tầng (ánh xạ Heroes 3)
+## Cau Truc 3 Tang
 
-| Heroes 3 | Vai trò | Bản game |
+| Tang | Vai tro |
+|---|---|
+| Tang 1 | Tai nguyen co ban de xay dung va duy tri |
+| Tang 2 | Linh Thach 3 menh gia la do luu thong kinh te |
+| Tang 3 | Tai nguyen dac thu theo server va theo vung dat |
+
+### Tang 1 - Tai nguyen co ban
+
+| Tai nguyen | Vai tro |
+|---|---|
+| Go | xay dung, sua chua, cong trinh co ban |
+| Da | ket cau, phong thu, tru cu |
+| Luong thuc | nuoi quan, hanh quan, duy tri dan so |
+
+### Tang 2 - Linh Thach
+
+| Menh gia | Vai tro |
+|---|---|
+| Ha | giao dich hang ngay, mua vat dung nho |
+| Trung | giao dich trung gian, van hanh the luc |
+| Thuong | tich tru, dau tu, mua quan tier cao, quyen khai thac lon |
+
+### Tang 3 - Tai nguyen dac thu
+
+Moi server co mot so tai nguyen dac thu rieng, khong rai deu toan map. Vi du:
+
+- server nay co the manh ve kim loai
+- server kia co the manh ve linh thao
+- mot so server co tai nguyen phuc vu cho di tich hoac quan tier cao
+
+Day la co che ep giao thuong va tranh doat, khong cho mot server tu cung tat ca.
+
+---
+
+## Linh Thach - Tien te 3 menh gia
+
+1 Trung = 1000 Ha
+1 Thuong = 1000 Trung
+
+Linh Thach la lop thanh toan dung de:
+
+- mua ban hang hoa
+- tra phi khai thac
+- tra phi phuc dung di tich
+- mua quyen dao tao quan cao hon
+- tra luong cho the luc va hop dong
+
+| Chieu doi | Co phi? | Ghi chu |
 |---|---|---|
-| Gold | Tiền vạn năng | **Linh Thạch** (3 mệnh giá Hạ/Trung/Thượng) |
-| Wood + Ore | Phổ thông | **Gỗ, Đá, Lương thực** (tài nguyên xây dựng cơ bản) |
-| Mercury/Sulfur/Crystal/Gems | Hiếm | **Tài nguyên đặc thù theo server** (Lôi Châu, Hoả Long Cốt, Vạn Niên Hàn Thiết…) |
+| Ha -> Trung | khong | gom luong nho len |
+| Trung -> Thuong | khong | gom luong lon len |
+| Thuong -> Trung | co | mat mot phan de tao sink |
+| Trung -> Ha | co | mat mot phan de tao sink |
 
-> Điểm mạnh hơn Heroes 3: tài nguyên hiếm **đặc trưng theo server** (không rải toàn map) → ép giao thương xuyên server → đúng **Scarcity-Driven**.
-
----
-
-## Linh Thạch — Tiền Tệ 3 Mệnh Giá
-
-```
-1 Trung   = 1000 Hạ
-1 Thượng  = 1000 Trung
-```
-
-**Quang phổ từ tiền tiêu → tài sản tích trữ** (không phải "cùng một tiền to nhỏ"):
-
-| Mệnh giá | Vai trò (như Heroes 3) | Độ dồi dào |
-|---|---|---|
-| **Hạ** | Tiền tiêu hằng ngày (như Gold) — mọi giao dịch nhỏ | Dồi dào |
-| **Trung** | Trung gian | Vừa |
-| **Thượng** | Tài sản đầu tư / đầu vào **quân tier cao** (như Crystal) | **Hiếm** |
+Ty le mat mang co the di chot sau, nhung phai giu tinh chat lossy khi doi nguoc.
 
 ---
 
-## Luật Đổi Mệnh Giá — Có Ma Sát
+## Kinh Te Cua Server
 
-### Đổi xuôi (gom lên): MIỄN PHÍ
-```
-1000 Hạ → 1 Trung        1000 Trung → 1 Thượng      (không mất mát)
-```
+Moi server co mot tran on dinh kinh te.
 
-### Đổi ngược (bổ nhỏ): LOSSY (mất mát)
-```
-Hạ ← Thượng: mất một phần    (ví dụ 1500 Hạ : 1 Thượng — con số cần chốt)
-```
-- Mỗi lần đổi ngược = tài nguyên **bốc hơi** khỏi nền kinh tế → **sink tự nhiên** (đúng "tài nguyên phải chảy ra").
-- **Nhà băng (Băng) đổi ngược hiệu quả hơn** nhờ kho gộp → ăn **spread**. Băng không "in tiền", nó **bán tỷ giá tốt hơn**.
+| Thanh phan | Y nghia |
+|---|---|
+| Tran kinh te | muc tai nguyen toi da co the luu thong an toan |
+| Tran suc chua | muc tai san / quan luc ma server co the tiep nhan ma khong sap |
+| Thanh khoan | kha nang quy doi tai san thanh Linh Thach hoac ngoc |
 
-### Tỷ giá đổi ngược
-- **Do server Băng đặt** (có Băng trong cụm): 1 Băng = độc quyền; 2 Băng = cạnh tranh phá giá.
-- **Sàn mặc định của game** (luôn tồn tại, kể cả cụm không-Băng): tỷ giá "chợ đen" tệ, làm **phanh** chống độc quyền Băng + cứu cụm không-Băng.
+Neu vuot tran:
 
----
+- tieu hao tang len
+- giao dich cham lai
+- quan luc khong the dong loat bung no
+- di tich phuc dung bi nghen
 
-## Kho Có Giới Hạn Ô
-
-- Kho giới hạn số ô → ai nghèo/vác nhiều **tự chọn** gom lên Thượng để đủ chỗ.
-- **Gom là TỰ CHỌN, không tự động** (đúng tinh thần "không cưỡng bức").
-- Hệ quả: của cải giàu bị dồn thành mệnh giá cao → **illiquid** ("đóng băng") → cầu dịch vụ đổi tiền của Băng.
+Day la cach ngan oldbie mang qua qua nhieu tai san de pha server moi.
 
 ---
 
-## Cơ Chế Anti-Snowball Nội Tại
+## Khon hiem Co Y Nghia
 
-```
-Bị cướp mỏ Thượng → mất nguồn Thượng → yếu đi
-        ↓
-Cắn răng đổi ngược (chịu lỗ) → gom đủ Thượng → mua quân tier cao SỚM → phản công
-```
-- Người mạnh (có mỏ, dư Thượng) không cần đổi ngược; chỉ **kẻ bị dồn** mới phải → đổi ngược **đánh thuế kẻ thua để cho họ cơ hội lật kèo** (anti-snowball, không phát đồ miễn phí).
-- Vì đổi ngược lossy → mệnh giá nhỏ *biến mất dần* khỏi lưu thông → cuối season Hạ/Trung cực hiếm → khan hiếm gắt dần (hợp endgame căng).
+Tai nguyen khong duoc sinh vo han.
+
+Noi khan hiem phai tao ra giao thuong, bao ke, cuop boc, phan boi, noi ung va lien minh.
+
+Neu tai nguyen qua de co, game se thanh vong lap farm va mat dan tinh chat xa hoi.
 
 ---
 
-## Hệ Quả Theo Cụm
+## Phuc Dung Di Tich
 
-- Cụm **không có Băng** → ai cũng chịu tỷ giá sàn → Thượng đắt đỏ → **lên quân tier cao chậm hơn**.
-- → Mỗi cụm có "khí hậu tài chính" khác nhau → người chơi *mừng* khi cụm có Băng, *tiếc* khi không → **Every Faction Matters**.
+Biome 2 la mot xa hoi co nhieu di tich can xay lai de mo quyen mua quan va xay dung the luc.
+
+Di tich can vat lieu, nhan luc, quan luc, tri thuc va quyen khai thac hop phap.
+
+Neu thieu mot trong cac thanh phan nay, di tich khong the chay het hieu suat.
 
 ---
 
-## ❓ Câu Hỏi Mở
+## Nguyen Tac Tong Quan
 
-- [ ] Tỷ lệ phạt đổi ngược cụ thể (1500:1? khác?) + biên độ Băng cải thiện.
-- [ ] Tầng "phổ thông" gồm mấy loại (gỗ/đá/lương riêng hay gộp)?
-- [ ] Số ô kho cụ thể + có nâng cấp không.
-- [ ] Linh Thạch Hạ có phải tiền cho **mọi** giao dịch, hay có loại giao dịch chỉ nhận Thượng?
+- Tai nguyen co ban de duy tri.
+- Linh Thach de luu thong kinh te.
+- Tai nguyen dac thu de tao ban sac server.
+- Kinh te phai co suc cat va co ma sat.
+- Doi nguoc phai ton phi de tao sink.
+- Moi server co tran on dinh de chong lanh tho va economy snowball.
+
+---
+
+## Anti-Snowball
+
+| Co che | Tac dung |
+|---|---|
+| Cuop mo | cat nguon tai nguyen cua ben manh |
+| Phong toa di tich | lam cham tich luy cua ben manh |
+| Dao phi doi nguoc | rut bot tai san khoi luu thong |
+| Tran on dinh server | chan viec mot ben bung qua nhanh |
+
+---
+
+## Cau Hoi Mo
+
+- Ty le mat khi doi nguoc Linh Thach chot bao nhieu?
+- Moi server co bao nhieu tai nguyen dac thu la vua?
+- Tai nguyen dac thu co reset theo season hay theo vong server?
+- Tran kinh te server se duoc tinh bang power, tai san hay so nguoi choi?

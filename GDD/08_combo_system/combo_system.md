@@ -2,38 +2,73 @@
 
 ## Triet Ly
 
-Combo KHONG duoc thong bao truoc.
-Nguoi choi tinh co ket hop -> hieu ung la xuat hien.
-He thong log: "Hieu ung chua duoc dat ten phat sinh".
-Nguoi choi dat ten -> ten do vao lich su server.
-Nguoi phat hien buff khi dung combo do luon manh hon nguoi hoc lai.
+Combo la phan thuong cho nguoi choi biet quan sat, thu nghiem va tan dung map 3D realtime. Combo khong duoc thong bao truoc nhu cong thuc co dinh.
+
+Nguoi choi tinh co ket hop element, dia hinh, thoi tiet, quan doi, di tich hoac hanh vi xa hoi -> hieu ung la xuat hien. Neu hieu ung du doc dao, he thong ghi nhan thanh su kien cua server.
+
+Combo phai lam game co chieu sau hon, khong bien thanh meta damage co dinh.
+
+---
 
 ## Nguyen Tac Chung
 
 - Combo phai la phan thuong cho suc sang tao, khong phai button co dinh.
-- Combo moi phat hien duoc cong dong dat ten va luu vao server history.
-- Nguoi phat hien duoc loi the ro hon, nhung khong duoc banh trung endgame.
-- Combo nen nghieng ve utility, control, vi tri, nhip combat va bao ton tai nguyen hon la raw damage.
+- Combo manh nen den tu dieu kien map, timing, vi tri, dia hinh, hau can hoac quan he xa hoi.
+- Combo uu tien utility, control, di chuyen, vision, phong toa, tieu hao, kinh te va drama.
+- Raw damage chi la mot phan nho, khong duoc la huong duy nhat.
+- Combo co the bi counter boi dia hinh, element, tran phap, tinh bao hoac chien thuat.
+
+---
 
 ## Co Che Thuong
 
 ### Nguoi phat hien lan dau
 
-- +8% hieu luc cho combo vua phat hien
-- Duoc ghi ten vao lich su server
-- Nhan uy tin nho trong he thong thong tin / ngoai giao / tinh bao
+- +8% hieu luc cho combo vua phat hien.
+- Duoc ghi ten vao lich su server.
+- Co the nhan uy tin trong he thong thong tin, ngoai giao hoac tinh bao.
 
 ### Nguoi hoc lai sau do
 
-- +3% hieu luc neu dung dung cong thuc da dat ten
-- Khong duoc vuot qua gia tri cua nguoi phat hien
-- Neu dung sai nguyen tac thi chi nhan hieu ung co ban
+- +3% hieu luc neu dung dung cong thuc da dat ten.
+- Khong duoc vuot qua gia tri cua nguoi phat hien.
+- Neu dung sai dieu kien thi chi nhan hieu ung co ban hoac that bai.
 
-### Han che
+### Khi combo bi nerf
 
-- Khong co combo nao tang damage qua lon ngay tu dau.
-- Combo manh nhat phai co dieu kien ro ve dia hinh, element, di chuyen hoac timing.
-- Neu combo lam pha vo can bang, uu tien hotfix nhanh.
+- Nguoi phat hien van giu danh nghia lich su.
+- Buff phat hien co the giam theo ban nerf, nhung khong bi xoa khoi lich su server.
+
+---
+
+## Combo Trong Realtime 3D
+
+Combo phai gan voi hanh vi dieu quan tren map.
+
+| Loai combo | Vi du tac dung |
+|---|---|
+| Dia hinh | dong bang duong nui, tao bun lay, pha cau, chan cua ngo |
+| Thoi tiet | tao suong mu, bao tuyet, gio doc, mua set |
+| Vision | che mat dich, lo vi tri an, tao tin gia tren map |
+| Hanh quan | day dich vao diem nghen, chia cat hang ngu, cat tiep te |
+| Siege | ket hop cong thanh + tran phap + may moc |
+| Boss fight | dung element dung timing de cat skill boss |
+
+---
+
+## Combo Xa Hoi / Kinh Te
+
+Combo khong chi nam trong combat.
+
+| Combo | Thanh phan | Hieu ung |
+|---|---|---|
+| Cartel | Thuong hoi + tinh bao + kho | thao tung gia va dieu huong hang hoa |
+| Bao Ke Tuyen Duong | Chien dau + Thuong mai + Phap Gia | bien tuyen duong thanh nguon thu on dinh |
+| Thien Dao Luan | Phap Gia + Tong Mon + uy tin | bien hop dong thanh ap luc xa hoi |
+| False Flag Chain | Tinh bao + Phap Gia + tin don | lam hai the luc danh nhau vi bang chung gia |
+| Doi No Mau | Thuong hoi + Phap Gia + quan su | thu hoi no that bai -> bien thanh chien tranh hop phap |
+
+---
 
 ## Ma Tran Combo Cap Doi Co Ban
 
@@ -48,63 +83,68 @@ Nguoi phat hien buff khi dung combo do luon manh hon nguoi hoc lai.
 | Phong | Bao lua | Bay | Cat | Kiem gio | Song | Bao loi | - | Bao tuyet |
 | Bang | Hoi | Dong | Dong bang dat | Thep bang | Bang | Dong bang loi | Bao tuyet | - |
 
+---
+
 ## Combo Da Biet - Vi Du
 
 ### Cap doi
 
 | Combo | Element | Hieu ung |
 |---|---|---|
-| Doc Phong Tran | Doc + Phong server | Phong khuech tan doc nhanh dien rong, bam vao dich dang chay tron |
-| Hoi Nuoc Mu | Hoa + Thuy | Suong mu chien truong day dac |
-| Dan Dien | Kim + Loi | Vu khi Kim dan set -> AoE dien quanh muc tieu |
-| Bun Lay | Thuy + Tho | Lam cham toan vung, ky binh gan nhu khong di chuyen duoc |
-| Song Than | Thuy + Phong | Song cuon quan tier thap |
+| Doc Phong Tran | Doc + Phong | khuech tan doc nhanh dien rong, bam vao dich dang chay tron |
+| Hoi Nuoc Mu | Hoa + Thuy | tao suong mu day dac, giam vision va lam roi doi hinh |
+| Dan Dien | Kim + Loi | vu khi Kim dan set, tao AOE dien quanh muc tieu |
+| Bun Lay | Thuy + Tho | lam cham toan vung, dac biet chong ky binh / xe cong thanh |
+| Song Than | Thuy + Phong | day lech doi hinh, cuon quan tier thap, pha cau tam |
 
 ### Ba chieu
 
 | Combo | Element | Hieu ung |
 |---|---|---|
-| Loi Doc Bao | Doc + Phong + Loi | Phong khuech tan doc, Loi kich hoat doc no tung -> AOE cuc lon |
-| Bang Tieu Dia Sut | Bang + Tho + Kim | Dia hinh dong bang -> nang len -> Kim xuyen pha -> chon vui quan dich |
-| Man Suong Mu Thieu Dot | Hoa + Thuy + Phong | Hoi nuoc day + gio cuon -> dich khong nhin thay + bi bong |
+| Loi Doc Bao | Doc + Phong + Loi | doc bi gio khuech tan, loi kich no thanh AOE lon |
+| Bang Tieu Dia Sut | Bang + Tho + Kim | dong bang dia hinh -> nang len -> kim xuyen pha -> chon vui quan dich |
+| Man Suong Mu Thieu Dot | Hoa + Thuy + Phong | suong mu day + gio cuon -> dich mat vision + bi bong |
 
-### Phi chien dau
+---
 
-| Combo | The luc | Hieu ung |
-|---|---|---|
-| Cartel | Thuong hoi + tinh bao | Kiem soat kinh te toan server khong can quan doi |
-| Luong Vu Khi Lien Minh | Tho + Kim | Quan doi Kim manh nhat, Tho nuoi duoc dai quan lon nhat |
-| Thien Dao Luan | Phap Gia + Tong Mon | Vi pham -> debuff tu chinh game system |
+## Gioi Han Va Counter
 
-## So Luong Combo Ly Thuyet
+- Combo can dieu kien ro, khong the spam moi luc.
+- Combo cap cao can tai nguyen, dia hinh hoac thoi diem.
+- Combo xa hoi can bang chung, uy tin, nguon tin hoac hop dong.
+- Combo co counter bang trinh sat, tran phap, doi hinh, element khac hoac phan ung xa hoi.
 
-8 element x 10 the luc x 4-5 nhanh talent
-x combo cap doi + ba chieu
-x bien so nhan vat x dia hinh server
--> So combo designer biet truoc: ~50
--> So combo nguoi choi se tim ra: khong gioi han
+---
 
 ## He Thong Ghi Nhan
 
 Combo moi xuat hien:
-- Server log: "[The Luc X] va [The Luc Y] vua tao ra hieu ung chua tung thay tai [Toa do]"
-- Dev nhan notification
-- Quan sat:
-  - Qua manh -> nerf nhe qua hotfix
-  - Thu vi -> buff them, dat ten chinh thuc
-  - Broken -> hotfix ngay
-- Patch note: "Doc Phong Tran - phat hien boi [Ten]"
 
-## Nguyen Tac Ghi Ten
+1. Server log ghi nhan the luc, toa do, thanh phan va thoi diem.
+2. Tong Thien Nhan tao bao cao voi do tin cay nhat dinh.
+3. Neu combo lap lai va co tac dong lon, cong dong co the dat ten.
+4. Ten combo gan voi nguoi / the luc phat hien lan dau.
+5. Neu broken, hotfix ngay nhung khong xoa khoi lich su server.
 
-- Neu combo duoc cong dong dung nhieu, he thong cho phep chon ten chinh thuc.
-- Ten combo se gan voi nguoi phat hien lan dau.
-- Neu combo bi nerf, nguoi phat hien van giu danh nghia lich su.
-- Neu combo bi broken, uu tien sua ngay nhung khong xoa khoi lich su server.
+---
+
+## Thu Vien Server
+
+Combo co the duoc luu vao Thu Vien Server theo 3 muc:
+
+| Muc | Hien thi |
+|---|---|
+| Tin don | chi biet da tung co hieu ung la |
+| Bao cao | biet thanh phan gan dung, chua chac cong thuc |
+| Cong thuc | biet dieu kien day du neu da duoc cong bo / mua / danh cap |
+
+Nguoi choi co the giu bi mat combo neu muon. Thu vien khong nen tu dong phoi bay tat ca.
+
+---
 
 ## Cac Cau Hoi Con Mo
 
-- Combo co duoc luu vao thu vien server de nguoi khac xem khong?
-- Buff nguoi phat hien combo co the tang them neu combo kho phat hien hon khong?
-- Combo co the bi counter boi dia hinh hoac element khac khong?
-- Co nen co combo 4 chieu cho endgame khong?
+- Co nen cho combo 4 chieu cho endgame khong?
+- Thu Vien Server can dieu kien nao de mo muc Cong thuc?
+- Combo xa hoi co can duoc Tong Thien Nhan ghi nhan giong combo combat khong?
+- Buff +8% / +3% co ap dung cho combo xa hoi hay chi combat?

@@ -1,198 +1,194 @@
-# Hệ Thống Xã Hội & Drama
+# He Thong Xa Hoi & Drama
 
-## Triết Lý
+## Triet Ly
 
-```
-Human Drama mới là thứ giữ người chơi lại
-Không phải số liệu
-        ↓
-Mọi hành động để lại dấu vết
-Mọi quyết định có hệ quả 3 tầng:
-├── Tức thì (ngày đó)
-├── Ngắn hạn (3-5 ngày)
-└── Dài hạn (cả season)
-```
+Game nay khong giu nguoi choi bang chi so don thuan. No giu nguoi choi bang moi quan he, loi hua, thu han, no nan, giao dich, phan boi va danh tieng.
+
+Biome 2 la mot xa hoi song. Moi hanh dong quan trong phai de lai dau vet tren map, trong log, trong thuong hoi, trong phap ly hoac trong ky uc cong dong.
+
+Khong co mot reputation tuyet doi duy nhat phan xet tat ca. Hau qua phan boi tuy thuoc vao cach cac ben lien quan danh gia va cach cong dong dien giai su kien.
 
 ---
 
-## Các Hành Vi Con Người
+## Nguyen Tac Xa Hoi
 
-### Phản Bội
-```
-Liên minh A + B đang đánh C
-B bí mật deal với C
-B quay súng bắn A từ phía sau
-A sụp đổ, B + C chia tài nguyên
-```
-
-**Cơ chế:**
-- Kênh ngoại giao bí mật — chat riêng không ai thấy
-- Hiệp ước có thời hạn — tự hết hạn, không ràng buộc vĩnh viễn
-- Danh tiếng (Reputation) — phản bội nhiều → cả server biết
-- Phí phản bội — hủy sớm tốn tài nguyên nhưng vẫn làm được
-
-### Cướp Bóc
-```
-Thương đội di chuyển trên map = mục tiêu
-Phong server phát hiện qua trinh sát
-Chặn đường, cướp 40% hàng hóa
-```
-
-**Cơ chế:**
-- Thương đội chọn tuyến đường — ngắn thì nguy hiểm
-- Thuê hộ tống từ thế lực quân sự → chia % lợi nhuận
-- Bảo hiểm thương đội — đóng phí, mất hàng được bù một phần
-
-### Nội Gián
-```
-Thế lực A cài người vào Thế lực B
-Nội gián báo cáo: số quân, tài nguyên, kế hoạch tấn công
-Hoặc phá hoại: đốt kho lương, mở cổng thành
-```
-
-**Cơ chế:**
-- Môn đồ bí mật phái sang dưới danh nghĩa "học nghề"
-- Thế lực nhận phải điều tra nội bộ để phát hiện
-- Bị phát hiện → bắt, tra tấn lấy thông tin, hoặc trao trả
-
-### False Flag / Giả Danh
-```
-C cướp giả danh B → A trả thù B (oan)
-B mất uy tín, mất đồng minh
-C thu lợi kép: hàng hóa + gây thù A-B
-```
-
-**Điều kiện thực hiện:**
-- Trang phục / Phù Hiệu giả của thế lực bị giả danh
-- Xóa dấu vết di chuyển (Tình Báo Các tier 3+)
-- Phải ở trong địa bàn của thế lực bị giả danh
-
-**Rủi ro nếu bị lộ:**
-- Reputation: Ác Danh tăng vọt
-- Pháp Gia: Lệnh Truy Nã toàn server
-- Thương Hội: Bị cấm giao dịch
-- Khó phục hồi trong cùng 1 season
-
-**Điều tra:**
-- Thuê Tình Báo Các: tốn tài nguyên + thời gian, kết quả **70% chính xác**
-- Nhờ Pháp Gia phán xử: B có thể chứng minh ngoại phạm
-- Kệ không điều tra: tiếp tục bị C lợi dụng
-
-### Mua Chuộc & Ám Sát
-
-**Mua chuộc tướng địch:**
-- Tướng địch bất mãn → tiếp cận → trả đủ giá → đào tẩu hoặc phản bội
-- Tướng trung thành → báo lại chủ → bẫy ngược
-
-**Ám sát:**
-- Phái sát thủ đến ám sát NPC tướng lĩnh quan trọng
-- Thành công → thế lực địch hỗn loạn 24-48h
-- Thất bại → sát thủ bị bắt, danh tính bị lộ
-- **Không thể ám sát player trực tiếp** — chỉ NPC tướng lĩnh
-
-### Tin Đồn & Thông Tin Sai
-- Thế lực tung tin giả lên bảng thông báo server
-- Độ tin cậy theo reputation người tung
-- Thế lực chuyên tình báo có thể xác minh thật/giả
+- Loi hua co gia tri vi no co the bi pha.
+- Phan boi duoc phep, nhung phai co dau vet va hau qua.
+- Phap ly khong phai camera toan tri; no la cong cu cua the luc co uy tin, du lieu va kha nang cuong che.
+- Tin don, false flag, noi gian va tinh bao la mot phan cua gameplay.
+- Moi hanh dong xau khong nhat thiet bi game phat ngay, nhung se tao co hoi cho nguoi khac khai thac.
 
 ---
 
-## Reputation System
+## Reputation Theo Goc Nhin
 
-| Hành Động | Reputation Thay Đổi |
+Reputation khong nen la mot diem dao duc duy nhat. Moi nhom co the nhin nguoi choi khac nhau.
+
+| Goc nhin | Cach danh gia |
 |---|---|
-| Giữ lời hứa | +Tín Nghĩa |
-| Phản bội | -Tín Nghĩa, +Khét Tiếng Xảo Quyệt |
-| Cướp thương đội | +Hung Danh |
-| Bảo vệ thế lực yếu | +Nhân Đức |
-| Ám sát bị lộ | +Ác Danh |
+| Dong minh | co giu loi, co chia chien loi, co bo keo khong |
+| Ke thu | co dang so, co giu luat chien tranh, co hay false flag khong |
+| Thuong hoi | co tra no, co cuop hang, co bao ve tuyen duong khong |
+| Phap Gia | co hop dong, bang chung, tien an phan boi khong |
+| Dan / NPC | co bao ve, co boc lot, co gay chien lien tuc khong |
 
-### Ảnh Hưởng Thực Tế
+Mot hanh dong co the tao nhieu danh tieng trai nguoc. Vi du: cuop thuong doi co the tang Hung Danh voi ke cuop, giam Tin Nghia voi thuong hoi, nhung lai tang uy voi bang phai song bang cuop boc.
 
-| Reputation | Hiệu Ứng |
+---
+
+## Cac Hanh Vi Drama Chinh
+
+### Phan Boi
+
+Phan boi la hanh vi hop le ve gameplay.
+
+Co che:
+
+- hiep uoc co thoi han
+- co the huy som nhung ton phi va de lai dau vet
+- chat rieng va ngoai giao bi mat ton tai
+- uy tin do cac ben danh gia, khong phai game tu phan quyet tuyet doi
+
+Hau qua co the gom:
+
+- mat dong minh
+- bi thuong hoi nang phi
+- bi phap gia tu choi bao lanh
+- bi truy na neu co bang chung
+- tro thanh doi tac dang so nhung kho tin
+
+### Cuop Boc
+
+Thuong doi di tren map la muc tieu that.
+
+Co che:
+
+- chon tuyen ngan nguy hiem hoac tuyen dai an toan
+- thue ho tong tu the luc chien dau
+- bao hiem hang hoa
+- cuop thanh cong tao tai nguyen nhung tang rui ro bi bao thu
+
+### Noi Gian
+
+Noi gian tao drama noi bo va thong tin khan hiem.
+
+Co che:
+
+- dua mon do / nguoi hoc nghe vao the luc khac
+- thu thap so quan, kho, ke hoach, tuyen van tai
+- pha hoai kho, mo cong, lam cham phuc dung di tich
+- bi bat co the bi doi chuoc, tra tan, trao doi hoac xu tu
+
+### False Flag / Gia Danh
+
+False flag mo som vi no tao drama xa hoi som.
+
+Dieu kien:
+
+- can trang phuc, phu hieu, dau vet gia
+- can thong tin ve dia ban va thoi diem
+- can cach xoa hoac lam nhieu dau vet di chuyen
+
+Rui ro:
+
+- neu bi lo, ben thuc hien bi mat uy tin nang voi nhom bi anh huong
+- phap gia co the lap ho so truy na neu du bang chung
+- thuong hoi co the cam giao dich hoac tang phi
+- ke bi do toi co the dung dieu tra de dao nguoc tinh the
+
+### Mua Chuoc & Am Sat
+
+- Mua chuoc tuong NPC, mon do, thu kho, nguoi ho tong la hop le.
+- Tuong trung thanh co the bao nguoc chu, tao bay.
+- Am sat chi nen nham vao NPC tuong linh / nhan vat quan trong, khong am sat truc tiep player.
+- Am sat thanh cong tao hon loan ngan han, that bai tao bang chung va thu han.
+
+### Tin Don & Thong Tin Sai
+
+- Tin don co the tung qua kenh cong cong hoac tinh bao.
+- Do tin cay phu thuoc nguon, lich su, bang chung va reputation.
+- Tin don co the bi trace neu bi dieu tra du sau.
+
+---
+
+## Phap Gia & Hop Dong
+
+Phap Gia la co che xa hoi, khong phai he thong toan tri.
+
+Vai tro:
+
+- chung thuc hop dong
+- giu tien coc
+- xac nhan quyen khai thac
+- lap ho so truy na
+- lam trong tai khi cac ben dong y
+
+Phap Gia khong tu dong ngan phan boi. No chi lam cho phan boi co gia va co bang chung hon.
+
+---
+
+## Cau Noi Cho Nguoi Ngai Giao Tiep
+
+Khong phai ai cung muon chat dai. Game can cau noi xa hoi nhe.
+
+| Cong cu | Tac dung |
 |---|---|
-| Tín Nghĩa cao | Lãi vay thấp hơn, dễ kết minh |
-| Hung Danh cao | Thương đội né tuyến đường (lợi hoặc hại) |
-| Ác Danh cao | NPC làng dân không hợp tác, khó chiêu mộ nhân tài |
-| Nhân Đức cao | Môn đồ trung thành hơn, khó bị mua chuộc |
+| Cho thong tin | mua bao cao cung cau, di tich, tuyen duong |
+| Giao dich an danh | mua ban khong lo danh tinh cho den khi giao dich xong |
+| Moi gioi hop dong | Phap Gia hoac Thuong Hoi match nhu cau voi doi tac |
+| Ky hieu nhanh tren map | can bao ve, muon mua, can ban, can thong tin, can ho tro |
 
 ---
 
-## Chính Trị Nội Bộ Liên Minh
+## Diem Dac Biet Co The Trao Doi
 
-```
-Liên minh 5 thế lực
-Thế lực mạnh nhất muốn làm Minh Chủ
-3 thế lực nhỏ liên kết phủ quyết
-Bầu chọn Minh Chủ theo số phiếu
-```
-
-**Cơ chế:**
-- Liên minh có Hội Đồng — bỏ phiếu quyết định lớn
-- Minh Chủ có thể tham ô quỹ chung — để lại dấu vết
-- Bỏ phiếu bất tín nhiệm — lật đổ Minh Chủ
-- Ly khai được — nhưng mang theo bao nhiêu tài nguyên chung là vấn đề
-
----
-
-## Cầu Nối Xã Hội — Cho Người Ngại Giao Tiếp
-
-### Tình Báo Các — Chợ Thông Tin
-Mua báo cáo "Cung Cầu Thị Trường" thay vì hỏi trực tiếp:
-- "Hoàng Triều: đang thiếu 200 Hồi Nguyên Đan"
-- "Tông Môn: dư 50 Đột Phá Đan muốn bán"
-
-### Thương Hội — Giao Dịch Ẩn Danh
-- Đặt lệnh mua/bán không lộ danh tính
-- Hai bên không biết nhau là ai cho đến khi giao dịch xong
-
-### Pháp Gia — Môi Giới Hiệp Ước
-- Đặt yêu cầu: "Tôi cần bảo vệ thương đội, trả 50 Linh Thạch/chuyến"
-- Pháp Gia match với đối tác phù hợp
-- Không cần chat dài dòng
-
-### Hệ Thống Ký Hiệu Nhanh
-Đặt trên map — không cần gõ:
-
-| Ký Hiệu | Ý Nghĩa |
-|---|---|
-| 🤝 | Muốn hợp tác |
-| ⚔️ | Thách đấu |
-| 🛡️ | Cần bảo vệ |
-| 💰 | Muốn mua |
-| 📦 | Muốn bán |
-| 🔍 | Tìm thông tin |
-| ⚠️ | Cảnh báo khu vực nguy hiểm |
-
----
-
-## Điểm Đặc Biệt — Tài Nguyên Có Thể Trao Đổi
-
-### Các Hình Thức Giao Dịch
-
-| Hình Thức | Mô Tả | Drama |
+| Loai | Mo ta | Giao dich |
 |---|---|---|
-| Bán đứt | Chuyển quyền sở hữu hoàn toàn | Hối hận sau khi bán |
-| Cho thuê | Quyền khai thác có thời hạn | Hết hạn bị outbid |
-| Cổ phần | Nhiều thế lực cùng sở hữu | Âm mưu mua lại cổ phần |
-| Thế chấp | Dùng làm đảm bảo cho vay | Không trả được → mất vị trí chiến lược |
+| Diem khai thac | mo, gieng linh khi, bai linh thao | cho thue quyen khai thac |
+| Di Chi Truyen Thua | noi phuc dung quan va tri thuc | thu phi hoc / mua quyen |
+| Vi tri dia ly | deo nui, cau song, cua ngo | thu phi thong hanh |
+| Linh Mach | buff passive va tai nguyen | tranh chap lien tuc |
 
-**Ai xác nhận:** Pháp Gia — có chi phí, có thời gian xử lý.
+Hinh thuc giao dich:
 
-### Các Loại Điểm Đặc Biệt
-
-| Loại | Mô Tả | Giao Dịch |
-|---|---|---|
-| Điểm Khai Thác | Mỏ Huyền Tinh, Giếng Linh Khí | Cho thuê quyền khai thác |
-| Truyền Thừa Võ Học | Cổ Tích có Bí Kíp — phải đến tại chỗ | Thu phí "học phí" |
-| Vị Trí Địa Lý | Đèo núi, cầu sông, đỉnh cao | Thu phí thông hành |
-| Điểm Linh Mạch | Buff passive, tăng theo thời gian chiếm | Tranh chấp liên tục |
+- ban dut
+- cho thue
+- co phan
+- the chap
+- bao ke
 
 ---
 
-## ❓ Câu Hỏi Mở
+## Lien Server Va Xa Hoi
 
-- [ ] Điều tra False Flag — 70% chính xác, 30% sai dẫn đến hậu quả gì?
-- [ ] Tin đồn có thể bị trace về nguồn gốc không?
-- [ ] Cổ phần — tỷ lệ chia lợi nhuận theo cơ chế nào?
-- [ ] Pháp Gia môi giới — phí dịch vụ cụ thể bao nhiêu?
+Trong dau lien server, reputation va quan he khong bien mat.
+
+- Dong minh noi server co the tro thanh doi thu lien server.
+- Ke thu cu co the hop tac tam thoi neu cung loi ich.
+- False flag va tin don co gia tri lon hon vi nhieu server khong biet lich su nhau.
+- Phap Gia / Tinh Bao / Thuong Hoi co vai tro cau noi giua cac server.
+
+---
+
+## Tong Thien Nhan
+
+Tong Thien Nhan khong phai camera toan tri. No la lop ghi nhan va tom tat dau vet xa hoi.
+
+No co the ghi:
+
+- dau vet hanh quan
+- giao dich lon
+- hiep uoc da chung thuc
+- tin don dang lan
+- chien bao va bien dong uy tin
+
+Thong tin tu Tong Thien Nhan nen co do tin cay, nguon goc va kha nang bi thao tung.
+
+---
+
+## Cau Hoi Mo
+
+- Can cong thuc phi Phap Gia cho tung loai hop dong.
+- Dieu tra false flag sai 30% se tao hau qua gi?
+- Tin don bi trace ve nguon sau bao lau va bang cach nao?
+- Reputation theo goc nhin co hien thi cong khai hay chi hien trong bao cao?

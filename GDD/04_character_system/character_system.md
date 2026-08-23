@@ -1,182 +1,305 @@
 # He Thong Nhan Vat
 
-## Thuoc Tinh Co Ban (Sinh Ra Da Co)
+## Triet Ly
 
-| Thuoc tinh | Ky hieu | Anh huong |
-|---|---|---|
-| Can cot | xuong | Nen tang tu luyen, quyet dinh tran canh gioi |
-| Tam tinh | tim | Trung thanh, dao duc, anh huong loyalty |
-| Tri tue | tri | Hoc skill nhanh hay cham, chien thuat |
-| The chat | the | HP, chiu don, suc ben hanh quan |
-| Thien duyen | duyen | May man, ty le dot pha, ty le gap co duyen |
+Nhan vat la di san song cua the luc. Mot tuong khong chi la chi so chien dau, ma con la ky uc, quan he, loi hua, thu han, truyen thua va du vang.
+
+Danh hieu va quyen luc xa hoi chi co gia tri trong server hien tai. Khi roi server, nguoi choi khong mang theo ngai vang, slot danh hieu hay quyen chinh tri. Nguoi choi chi mang theo duoc Du Vang, Tri Thuc, Truyen Thua va mot phan nang luc ca nhan.
+
+---
+
+## Thuoc Tinh Co Ban
+
+| Thuoc tinh | Anh huong |
+|---|---|
+| Can cot | nen tang tu luyen, tran canh gioi |
+| Tam tinh | loyalty, dao duc, kha nang chiu ap luc |
+| Tri tue | toc do hoc skill, chien thuat, phuc dung tri thuc |
+| The chat | HP, suc ben, hanh quan, chiu don |
+| Thien duyen | co duyen, dot pha, gap bi kip, phat hien co hoi la |
+
+---
 
 ## Canh Gioi & Tuoi Tho
 
-| Canh gioi | Tuoi tho game | Ngay thuc |
-|---|---|---|
-| Luyen khi (1-9 tang) | ~100 nam | ~10 ngay |
-| Truc co | 200 nam | 20 ngay |
-| Kim dan | 500 nam | 50 ngay |
-| Nguyen anh | 1000 nam | 100 ngay |
-| Hoa than | 2000+ nam | 200+ ngay |
+Nhan vat co tuoi tho that. Tuoi tho tao ap luc truyen thua, bao ve tuong quan trong va dua ra quyet dinh ve be quan / ngu say.
 
-### Tran Canh Gioi Theo Can Cot
-
-| Can cot | Toi da |
+| Canh gioi | Vai tro |
 |---|---|
-| 1-3 sao | Truc co |
-| 4-5 sao | Kim dan |
-| 6-7 sao | Nguyen anh |
-| 8-9 sao | Hoa than |
-| 10 sao (Thien pham) | Khong gioi han |
+| Luyen The / Luyen Khi | nen co ban, quan tier thap |
+| Truc Co | chien luc so cap, mo nhieu role thuc dung |
+| Kim Dan | luc luong cot loi cua the luc |
+| Nguyen Anh | nhan vat chien luoc, anh huong server |
+| Hoa Than+ | di san song, cuc hiem, can gioi han bang tran server |
 
-## Skill Tree - Heroes 3 Style
+### Ngu Say / Be Quan / Phong Ton
 
-Moi lan len canh gioi -> chon 1 trong 3 skill random tu pool class.
+Nguoi choi co the dua nhan vat vao trang thai ngu say hoac be quan nhu lao to tong mon.
 
-Vi du Tong Mon - Luyen Khi tang 3:
-- Kiem Y Co Ban: +15% kiem dmg
-- Don Thuat Nhap: Mon toc do +10
-- Linh Luc Cam: Ung ty le dot pha +5%
+Trong trang thai nay:
 
-Chon 1 -> lock vao slot.
+- khong tham chien
+- khong giu slot danh hieu hien hanh
+- giam hoac dung lao hoa
+- giu lai truyen thua va du vang
+- muon goi day can tai nguyen, thoi gian hoac dieu kien di tich
 
-## He Thong Role
+Neu mot nhan vat dang giu slot dac thu ma ngu say qua lau, slot tu roi vi khong con du dieu kien hien dien trong xa hoi server.
 
-### 7 Role Co Ban
+---
 
-| Role | Passive pool | Dac diem |
-|---|---|---|
-| Dau si | Chiu don thay, phan kich, kien dinh | Can chien damage on dinh |
-| Tanker | Dai dia can, ket gioi nho | Giu tuyen, hut damage |
-| Sat thu | An than, don chi mang, nhe cong | Burst damage, am sat |
-| Xa thu | Tam xa, dia hinh loi, ngam ban | An toan, tam xa |
-| Phap su | Linh luc tu, khuech dai, nguyen to cong huong | AOE, elemental damage |
-| Phu tro | Hao quang, cuu chua, phat hien an | Buff/heal/hau can |
-| Muu si | Thong linh, dia loi, hau can | Chien thuat, chi huy |
+## Tuong Chinh Khi Chuyen Server
 
-### Active Skill - Phai Di Hoc
+Nguoi choi co the so huu nhieu tuong trong the luc, nhung khi chuyen server chi duoc chon mot tuong chinh di cung.
 
-Moi tuong chi co 1 active skill. Muon co phai den noi hoc, co bi kip, hoac ep tu tu nhan.
+Co che nay giong campaign Heroes 3: bat dau hanh trinh moi bang mot tuong va mot nhom quan gioi han.
 
-Cach hoc:
-- Den tan noi the luc do hoc truc tiep
-- Moi su phu ve day (ton tai nguyen, co the bi cuop tren duong)
-- Lay duoc bi kip (loai C - 1 lan, tranh gianh gay gat)
-- Bat tu nhan -> ep hoc skill
+Tuong chinh co the mang:
+
+- mot phan skill va passive
+- du vang
+- tri thuc ca nhan
+- mot phan trang bi
+- mot nhom quan han che
+
+Tuong chinh khong mang theo:
+
+- danh hieu server cu
+- slot role dac thu server cu
+- quyen chinh tri server cu
+- full quan luc va tai san server cu
+
+Mat tuong chinh la ton that lon vi tuong do la vat chua di san song cua nguoi choi.
+
+---
 
 ## Role Dac Thu
 
 ### Nguyen tac
 
-- Role dac thu co slot gioi han va khong mo them theo tien trinh.
-- Gioi han nay tao canh tranh, danh tieng va tinh doc quyen xa hoi.
-- Nguoi choi van co the chuyen huong, nhung se tra gia bang hieu suat, thoi gian, tai nguyen hoac quan he.
+- Role dac thu co slot gioi han.
+- Khong mo them slot theo tien trinh.
+- Danh hieu chi co gia tri trong server hien tai.
+- Roi server la tu bo danh hieu va slot do.
+- Sang server moi phai tranh lai tu dau.
 
-### Slot gioi han de tao canh tranh
+### Slot goi y
 
-| Nhom role | Slot goi y / server |
-|---|---|
+| Nhom role | Slot / server |
+|---|---:|
 | Role chien dau chu luc | 2 |
 | Role ho tro / cong nang | 3 |
 | Role chinh tri / chi huy toi cao | 1 |
 
-### Sinh ra san (Thien phu an)
+### Cach tranh slot
 
-- Ty le co ban: 1/500 nhan vat
-- Khong hien thi khi moi vao, tron nhu role thuong
-- Thuc tinh khi du dieu kien ngau nhien
-- Thong bao toan server khi thuc tinh
+Khong nen dung mot cach tranh duy nhat cho moi role.
 
-### Chuyen hoa (du dieu kien)
-
-Can 3 lop dieu kien:
-
-| Lop | Dieu kien |
+| Loai role | Cach tranh |
 |---|---|
-| Ca nhan | Canh gioi toi thieu + so tran kinh nghiem + stat nguong |
-| The luc | Phai co quan he voi the luc lien quan dong y truyen thua |
-| Moi truong | Mot so role chi chuyen hoa o server element phu hop |
+| Chien dau | thach dau, chien cong, boss, PvP gioi han |
+| Chinh tri / chi huy | uy tin server, cong nhan cua cac ben, chien dich lien minh |
+| Nghe / tri thuc | thanh tuu san xuat, phuc dung di tich, cong thuc hiem |
 
-### Vi du role dac thu
+### Roi slot
 
-| Role | Goc | Dieu kien | Server |
-|---|---|---|---|
-| Kiem tien | Dau si | Kim dan + 50 tran thang + Tong Mon truyen thua | Kim, Phong |
-| Hoa cong su | Xa thu | Truc co + Hoa server + Dan Mon Hoa Dan | Hoa |
-| Duoc su | Phu tro | Kim dan + Dan Mon truyen thua + 100 dan bao che | Moc, Hoa |
-| Anh ve | Sat thu | Kim dan + Tinh bao cac + 20 nhiem vu bong toi | Phong, Bang |
-| Loi phao thu | Phap su | Nguyen anh + Loi server + Phu luc hop tac | Loi |
-| Thuy quan do doc | Muu si | Kim dan + Thuy server + Linh mach thuong | Thuy |
-| Dia linh su | Tanker | Nguyen anh + Tho server + Dia long thach | Tho |
-| Dai nguyen soai | Muu si | Truc co + Hoang trieu + 10 tran chi huy lien quan | Tho, Kim |
+Nhan vat co the roi slot khi:
 
-### Rot hang - giu mot nua
+- ngu say / be quan qua lau
+- khong con du dieu kien duy tri
+- bi danh bai trong tranh chap hop le
+- tu bo slot
+- roi server
 
-Bi rot hang -> quay ve role goc.
+### Du Vang
 
-Mat:
-- Danh hieu
-- Active skill dac thu
-- Slot
+Khi mat role dac thu, nhan vat khong mat sach tat ca. Mot phan con lai thanh Du Vang.
 
-Giu:
-- Passive pool dac thu (-30%)
-- Canh gioi & kinh nghiem
-- Du vang - buff an
+Du Vang:
 
-Du vang theo role:
-- Kiem Tien -> Du vang Kiem Khi: don danh co kiem y, dich thay "Cuu Kiem Tien" giam si khi
-- Duoc Su -> Du vang Duoc Hon: dan duoc dung hieu qua hon 20%
-- Anh Ve -> Du vang Hu Anh: van an than ngan han duoc
+- giu mot phan ban sac cu
+- suy giam theo thoi gian
+- khong du de giu slot
+- co the ho tro tranh lai role trong tuong lai
 
-## Thuc tinh Linh Mach
+---
 
-Nhan vat binh thuong -> Linh Mach an
-Den dieu kien nhat dinh -> Thuc tinh event
-Thong bao toan server -> ca server nao loan -> tranh gianh
+## Skill
 
-Vi du - Hoang Tu Phe Z:
-- Xuat than: Hoang trieu, con thu bi phe, gia tri gan nhu 0
-- Thuc tinh: Dan Dao Thien Pham
-- Talent dac biet: moi lan dot pha canh gioi -> +1 talent point nhanh Duoc
+### Active Signature Skill
 
-## Aging & Truyen Thua
+Moi tuong chi nen co mot active signature skill.
 
-Khi lao thanh sap chet:
-- Truyen 1 skill -> de tu hoc ngay khong can level
-- De lai di vat -> item tang stats
-- De lai bi kip -> mo nhanh skill moi
+Active nay dinh danh tuong va tao ban sac chien thuat.
 
-Neu chet dot ngoat (chien tran, am sat):
-- Mat tat ca di san truyen thua lien quan
-- Tao dong luc bao ve nhan vat quan trong
+### Passive / Trait / Bond
 
-## Quan he nhan vat
+Tuong co the co nhieu passive, trait va bond. Day la lop tao chieu sau, khong can nhieu active de spam.
 
-Cung hoat dong -> tich luy quan he -> mo Bond Skill:
+### Doi active skill
 
-| Loai quan he | Bond skill |
-|---|---|
-| Su do | Do de hoc nhanh hon 20% |
-| Huynh de | Buff nhau khi cung chien truong |
-| Tinh dich | Debuff nhau nhung ca hai manh hon khi gan |
-| An oan | Mot ben chet -> ben kia bao phat suc manh |
+Active skill khong nen khoa cung vinh vien, nhung doi phai rat dat.
 
-## Tu nhan - Khai thac skill
+Muon doi active can:
 
-Tuong bi bat trong chien tran:
+- be quan hoac tay truyen thua
+- ton tai nguyen / bi kip / di tich
+- mat mot phan kinh nghiem skill cu
+- active cu co the thanh Du Vang yeu
+
+---
+
+## Hoc Skill
+
+Cach hoc:
+
+- den noi the luc do hoc truc tiep
+- moi su phu ve day
+- lay bi kip
+- phuc dung di tich
+- bat tu nhan de ep hoc skill
+
+Bi kip bi danh cap khong nen cho full skill ngay. No nen mo mot phan, sau do can phuc dung, luyen tap hoac tim di tich lien quan de hoan thien.
+
+---
+
+## Tu Nhan - Khai Thac Skill
+
+Tuong bi bat trong chien tran co the bi:
 
 | Lua chon | Ket qua |
 |---|---|
-| Doi chuoc | Nhan tai nguyen, tuong tro ve |
-| Chieu hang | Gi do loyalty, giu lai phuc vu |
-| Ep hoc skill (C) | Tinh bao + Dan Mon tra tan -> lay duoc 1 phan skill, tuong goc tut 1 tier skill |
-| Xu tu | Tao thu oan vinh vien |
-| Tha khong dieu kien | +nhan duc, tao an tinh |
+| Doi chuoc | nhan tai nguyen, tuong tro ve |
+| Chieu hang | du do loyalty, giu lai phuc vu |
+| Ep hoc skill | lay duoc mot phan skill, tuong goc tut tier skill hoac bi thuong tam tinh |
+| Xu tu | tao thu oan lon, co the cat dut truyen thua |
+| Tha khong dieu kien | tang nhan duc, tao an tinh |
 
-## Cau hoi con mo
+---
 
-- Bond skill co gioi han so luong khong?
-- Thien duyen anh huong chat luong co duyen the nao cu the?
-- Tuoi tho co hien thi cho nguoi choi khong?
+## Chet, Bi Bat Va Di Vat
+
+Huong tiep can giong Heroes 3 nhung co lop tien hiep.
+
+- Thua tran thuong: tuong co the bi thuong, rut lui hoac bi bat.
+- Bi bat: doi phuong co the doi chuoc, chieu hang, ep hoc skill hoac xu tu.
+- Bi xu tu / chet trong su kien dac biet: mat that.
+- Neu la tuong chinh khi campaign transfer, mat tuong la ton that cuc lon.
+
+De giam cam giac mat trang:
+
+- co the de lai di vat
+- co the de lai mo chi / tan hon
+- co the phuc dung mot phan truyen thua sau nay
+
+Khong nen hoi sinh full de tranh lam chet choc mat y nghia.
+
+---
+
+## Truyen Thua
+
+Khi lao thanh sap chet hoac chon truyen thua:
+
+- truyen mot phan skill cho de tu
+- de lai di vat
+- de lai bi kip
+- luu tri thuc vao biome 1
+
+Neu chet dot ngoat:
+
+- mat nhieu hon
+- chi giu lai phan da duoc luu, ghi chep hoac gan voi di vat
+
+Tri thuc ca nhan khac tri thuc the luc. Tri thuc ca nhan di theo tuong; tri thuc the luc nam trong di tich, thu vien, biome 1 hoac co so da phuc dung.
+
+---
+
+## Dien Trieu Tuong / Anh Linh Dien
+
+Sau khi khôi phuc di chi, nguoi choi co the mo noi trieu tap tuong.
+
+No co the goi:
+
+- tuong ban dia server
+- tuong trong vi dien / biome 1 cua nguoi choi
+- tuong dang ngu say / phong ton
+- tuong co duyen voi truyen thua dang giu
+
+Gioi han:
+
+- khong mo ngay tu dau server
+- can di chi phu hop
+- can tai nguyen va thoi gian
+- co gioi han so tuong active tren server
+
+---
+
+## Bond & Quan He Nhan Vat
+
+Bond la quan he song, khong chi la buff.
+
+| Quan he | Loi ich | Rui ro |
+|---|---|---|
+| Su do | hoc skill nhanh, truyen thua tot | de tu phan boi lam mat danh |
+| Huynh de | buff khi cung chien tuyen | mot nguoi chet lam suy morale |
+| An nhan | tang loyalty | bi ep tra on trong drama |
+| Tinh dich | manh hon khi doi dau | pha ke hoach chung |
+| Thu truyen kiep | tang suc khi bao thu | kho ngoai giao |
+| Chu tuong - thuoc ha | tang chi huy | phan boi gay hau qua lon |
+
+Gioi han:
+
+- mot tuong co the co nhieu quan he lich su
+- chi 3 bond active cung luc
+- bond co the di qua server duoi dang ky uc / du vang, nhung hieu luc giam neu nguoi lien quan khong o cung server
+
+---
+
+## Social / Drama Tu Nhan Vat
+
+Tuong NPC quan trong co the phan boi, bi mua chuoc, dao tau, tu lap phe nho, tiet lo bi mat, doi thuong hoac tu choi nhiem vu.
+
+Phan boi khong nen ngau nhien. Can co ly do doc duoc:
+
+- loyalty thap
+- tham vong bi bo qua
+- bi doi xu te
+- bi mua chuoc
+- co bond voi phe dich
+- bi false flag lam hieu lam
+- bi bo roi trong chien tranh
+
+### Chi so xa hoi goi y
+
+| Chi so | Y nghia |
+|---|---|
+| Loyalty | muc trung thanh voi chu / the luc |
+| Ambition | tham vong ca nhan |
+| Grievance | oan uc tich luy |
+| Debt | no an tinh / no tai nguyen |
+| Stigma | o danh ca nhan, tach khoi danh tieng the luc |
+
+---
+
+## Combo Va Nhan Vat
+
+Nguoi phat hien combo nen gan voi ca tuong va the luc.
+
+- Tuong giu ky uc va ky nang dung combo.
+- The luc giu danh nghia lich su neu combo da duoc cong bo.
+- Server giu ghi chep trong Thu Vien Server / Tong Thien Nhan.
+
+Neu tuong chet:
+
+- combo da dat ten van nam trong lich su server
+- the luc co the giu cong thuc neu da ghi chep
+- buff ca nhan cua tuong mat hoac chuyen thanh Du Vang yeu
+
+---
+
+## Cau Hoi Mo
+
+- Cong thuc suy giam Du Vang theo thoi gian.
+- Dieu kien cu the de goi tuong tu biome 1 qua Anh Linh Dien.
+- So tuong active toi da tren mot server.
+- Chi tiet phi doi active signature skill.
